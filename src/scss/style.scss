@@ -14,14 +14,15 @@ img {
   width: 100%;
 }
 %border {
-  border-top: 4px solid #4285f4;
+  border-top: 4px solid #3ed6bb;
+  //#4285f4;
   margin-top: 50px;
   padding-top:50px;
 }
 //Header
 .header {
   @extend %container;
-  padding-top: 2rem;
+  padding-top: 1.3rem;
   hr {
     position: relative;
     top: 24px;
@@ -42,6 +43,40 @@ img {
     }
     a{
       color: #414549;
+    }
+  }
+}
+//Main Content
+.content {
+  @extend %container;
+}
+//Home
+.home {
+  @extend %flex;
+  flex-flow: column wrap;
+  &__text {
+    //align-self: flex-start;
+  }
+}
+
+//About me
+.aboutme {
+  @extend %border;
+  @extend %flex;
+  flex-flow: wrap;
+  &__header {
+    @extend %flex;
+    margin-bottom: 1.2rem;
+    a {
+      float: right;
+      color: #4285f4;
+    }
+  }
+  &__image {
+    @extend %flex;
+    img{
+      width: 200px;
+      border-radius: 50%;
     }
   }
 }

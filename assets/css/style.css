@@ -250,11 +250,11 @@ li {
   .col-lg-12 {
     width: 100%;
     padding: 0 2.5%; } }
-.header {
+.header, .content {
   width: 100%;
   padding: 3% 5%; }
 
-.header__logo, .header__menu {
+.header__logo, .header__menu, .home, .aboutme, .aboutme__header, .aboutme__image {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -262,8 +262,13 @@ li {
 img {
   width: 100%; }
 
+.aboutme {
+  border-top: 4px solid #3ed6bb;
+  margin-top: 50px;
+  padding-top: 50px; }
+
 .header {
-  padding-top: 2rem; }
+  padding-top: 1.3rem; }
   .header hr {
     position: relative;
     top: 24px; }
@@ -276,5 +281,19 @@ img {
     margin-right: 40px; }
   .header__menu a {
     color: #414549; }
+
+.home {
+  flex-flow: column wrap; }
+
+.aboutme {
+  flex-flow: wrap; }
+  .aboutme__header {
+    margin-bottom: 1.2rem; }
+    .aboutme__header a {
+      float: right;
+      color: #4285f4; }
+  .aboutme__image img {
+    width: 200px;
+    border-radius: 50%; }
 
 /*# sourceMappingURL=style.css.map */
