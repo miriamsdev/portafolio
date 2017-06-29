@@ -80,3 +80,17 @@ img {
     }
   }
 }
+
+.portfolio {
+  @extend %flex;
+  @extend %border;
+  flex-flow: wrap;
+  align-items: flex-start;
+  &__item {
+    margin-bottom: 70px;
+    img {
+      width: 200px;
+    }
+  }
+
+}

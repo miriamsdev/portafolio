@@ -254,7 +254,7 @@ li {
   width: 100%;
   padding: 3% 5%; }
 
-.header__logo, .header__menu, .home, .aboutme, .aboutme__header, .aboutme__image {
+.header__logo, .header__menu, .home, .aboutme, .aboutme__header, .aboutme__image, .portfolio {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -262,7 +262,7 @@ li {
 img {
   width: 100%; }
 
-.aboutme {
+.aboutme, .portfolio {
   border-top: 4px solid #3ed6bb;
   margin-top: 50px;
   padding-top: 50px; }
@@ -295,5 +295,13 @@ img {
   .aboutme__image img {
     width: 200px;
     border-radius: 50%; }
+
+.portfolio {
+  flex-flow: wrap;
+  align-items: flex-start; }
+  .portfolio__item {
+    margin-bottom: 70px; }
+    .portfolio__item img {
+      width: 200px; }
 
 /*# sourceMappingURL=style.css.map */
