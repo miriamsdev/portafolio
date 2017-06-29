@@ -21,20 +21,20 @@ img {
 //Header
 .header {
   @extend %container;
-  @extend %flex;
-  flex-flow: wrap;
-  padding-top: 4rem;
-  img {
-    width: auto;
+  padding-top: 2rem;
+  hr {
+    position: relative;
+    top: 24px;
   }
   &__logo {
-    @extend %flex;
-    padding-bottom: 1rem;
+    @extend %flex;//en menos scroll desactivar
+    padding-bottom: .6rem;
+    img {
+      width: 150px;
+    }
   }
-  &__search img{
-    float: right;
-  }
-  &__navigation {
+
+  &__menu {
     @extend %flex;
     li {
       display: inline-block;
