@@ -1,0 +1,19 @@
+$columns : 12;
+$column-width : 100%/$columns;
+$breakpoints : (xs : 0, sm : 768px, md : 992px, lg : 1200px );
+@function column-width($column){
+  @return $column-width*$column;
+}
+@mixin column($screen, $min-width){
+  @media (min-width:$min-width){
+    @for $i from 1 through $columns {
+      .col-#{$screen}-#{$i} {
+        width: column-width($i);
+        padding: 0 2.5%;
+      }
+    }
+  }
+}
+@each $name, $width in $breakpoints {
+  @include column($name, $width);
+}
