@@ -48,7 +48,7 @@ img {
     }
     a{
       color: #fff;
-      font-weight: lighter;
+      font-weight: 400;
       font-size: 1.1rem;
     }
     li:hover{
@@ -76,14 +76,19 @@ img {
 .home {
   @extend %flex;
   flex-flow: column wrap;
-  //margin-top: 50px;
   height: 100vh;
+  background: rgba(91, 91, 116, 0.41);
   &__text {
-    h1 {  text-shadow: 5px 5px 15px #3ed6bb;}
+    text-align: center;
+    overflow: auto;
+    padding-top: 60px;
+    h1 {
+      text-shadow: 5px 5px 15px #3ed6bb;
+      margin-bottom: 70px;
+    }
     h1,h3 {
       font-weight: 500;
       color: #f4f1f1;
-      margin-bottom: 21px;
     }
   }
 }
