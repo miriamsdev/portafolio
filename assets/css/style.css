@@ -1,13 +1,13 @@
 h1 {
-  font-family: "Roboto";
-  font-size: 36px;
+  font-family: "Rancho";
+  font-size: 6rem;
   font-weight: normal;
-  line-height: 36px;
+  line-height: 50px;
   color: #424242;
   margin-bottom: 10px; }
 
 h2 {
-  font-family: "Roboto";
+  font-family: "Metrophobic";
   font-size: 24px;
   font-weight: normal;
   line-height: 32px;
@@ -15,10 +15,10 @@ h2 {
   margin-bottom: 10px; }
 
 h3 {
-  font-family: "Roboto";
-  font-size: 20px;
+  font-family: "Metrophobic";
+  font-size: 2rem;
   font-weight: 500;
-  line-height: 28px;
+  line-height: 35px;
   color: #424242;
   margin-bottom: 10px; }
 
@@ -40,7 +40,7 @@ span {
 
 li {
   font-family: "Roboto";
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 14px;
   color: #414549;
@@ -250,11 +250,17 @@ li {
   .col-lg-12 {
     width: 100%;
     padding: 0 2.5%; } }
+body {
+  background: url("../images/home.jpg") center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh; }
+
 .header, .content {
   width: 100%;
-  padding: 3% 5%; }
+  padding: 1% 5%; }
 
-.header__logo, .header__menu, .home, .aboutme, .aboutme__header, .aboutme__image, .portfolio {
+.header__menu, .home, .aboutme, .aboutme__header, .aboutme__image, .aboutme__content .awards, .skills, .skills__row, .skills__row .box div, .portfolio {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -262,39 +268,85 @@ li {
 img {
   width: 100%; }
 
-.aboutme, .portfolio {
+.aboutme, .skills, .portfolio {
   border-top: 4px solid #3ed6bb;
   margin-top: 50px;
   padding-top: 50px; }
 
 .header {
-  padding-top: 1.3rem; }
-  .header hr {
-    position: relative;
-    top: 24px; }
-  .header__logo {
-    padding-bottom: .6rem; }
-    .header__logo img {
-      width: 150px; }
-  .header__menu li {
-    display: inline-block;
-    margin-right: 40px; }
-  .header__menu a {
-    color: #414549; }
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background-color: #2c3e50; }
+  .header__logo img {
+    width: 70px; }
+  .header__menu {
+    justify-content: space-around; }
+    .header__menu li {
+      display: inline-block;
+      margin-left: 40px;
+      padding: 7px 0; }
+    .header__menu a {
+      color: #fff;
+      font-weight: lighter;
+      font-size: 1.1rem; }
+    .header__menu li:hover {
+      border-bottom: 4px solid #3ed6bb; }
 
 .home {
-  flex-flow: column wrap; }
+  flex-flow: column wrap;
+  height: 100vh; }
+  .home__text h1 {
+    text-shadow: 5px 5px 15px #3ed6bb; }
+  .home__text h1, .home__text h3 {
+    font-weight: 500;
+    color: #f4f1f1;
+    margin-bottom: 21px; }
 
 .aboutme {
-  flex-flow: wrap; }
+  flex-wrap: wrap; }
   .aboutme__header {
-    margin-bottom: 1.2rem; }
+    margin-bottom: 1.2rem;
+    justify-content: space-between; }
     .aboutme__header a {
       float: right;
       color: #4285f4; }
   .aboutme__image img {
     width: 200px;
     border-radius: 50%; }
+  .aboutme__content .awards {
+    align-items: flex-start; }
+  .aboutme__content img {
+    width: 75px; }
+
+.skills {
+  flex-wrap: wrap; }
+  .skills__row {
+    flex-wrap: wrap; }
+    .skills__row .box {
+      width: 220px;
+      height: 300px;
+      border-radius: 20px;
+      box-shadow: 8px 10px 14px -8px #cecece;
+      text-align: center;
+      background-color: #f4f1f1;
+      padding: 30px 14px 0 14px;
+      margin: 14px 35px; }
+      .skills__row .box div {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        height: 80px; }
+  .skills .size-icon {
+    font-size: 50px; }
+  .skills .box:hover {
+    padding-top: 20px;
+    background-color: #fff;
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    color: #8C8F98;
+    -webkit-trasnsition: all .05s ease-in-out; }
 
 .portfolio {
   flex-flow: wrap;

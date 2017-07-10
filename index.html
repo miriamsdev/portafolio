@@ -8,20 +8,26 @@
     <title>Miriam Peralta Castañeda</title>
     <link href="https://fonts.googleapis.com/css?family=Metrophobic|Rancho" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700|Roboto:300,400,500,700" rel="stylesheet">
-    <link rel="icon" href="assets/images/logo-miriam.png">
+    <link rel="icon" href="assets/images/logo-icon.png">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 <body>
     <header class="header">
-        <div class="header__logo col-md-12">
-            <img src="assets/images/logo-miriam.png" alt="mi logo">
-        </div>
-        <hr>
-        <nav class="header__menu col-md-12">
-            <ul>
-                <li><a href="#about">ACERCA DE MI</a></li>
-                <li><a href="#portfolio">PORTAFOLIO</a></li>
-                <li><a href="#skills">SKILLS</a></li>
+        <!--<div class="header__logo col-md-12">-->
+            <!--<img src="assets/images/logo-miriam.png" alt="mi logo">-->
+        <!--</div>-->
+        <nav class="header__menu">
+            <ul class="">
+                <li><a href="#aboutme">ACERCA DE MI</a></li>
+                <li><a href="#portfolio">SKILLS</a></li>
+            </ul>
+            <div class="header__logo">
+                <img src="assets/images/logo-miriam.png" alt="mi logo">
+            </div>
+            <ul class="">
+                <li><a href="#skills">PORTAFOLIO</a></li>
                 <li><a href="#contact">CONTACTO</a></li>
             </ul>
         </nav>
@@ -30,56 +36,92 @@
         <section id="home" class="home">
             <!--<div class="home__image"><img src="assets/images/bg.png" alt=""></div>-->
             <div class="home__text col-md-8">
-                <h1>HOLA, SOY MIRIAM PERALTA CASTAÑEDA</h1>
+                <h1>Hola, soy Miriam</h1>
                 <h3>Front End Developer Jr.</h3>
-                <p>Egresada de Laboratoria como desarrolladora Front End Jr., Ing. Informático y Sistemas de profesión. Con conocimientos especializados en el desarrollo de aplicaciones web, con diseño adaptable. Gran capacidad en desarrollo de código organizado, apasionada por la optimización de procesos y con buen manejo de metodología ágile. Soy una persona responsable, autodidacta y analista.</p>
                 <span>Profile</span>
             </div>
         </section>
         <section id="aboutme" class="aboutme">
-            <div class="aboutme__header col-md-12">
+            <div class="aboutme__header col-xs-12 col-md-12">
                 <div class="col-md-6"><h2>ACERCA DE MI</h2></div>
                 <div class="col-md-6"><a href="#">MORE NEWS</a></div>
             </div>
+
             <div class="aboutme__image col-md-4"><img src="assets/images/me.jpg" alt="miriam peralta castañeda"></div>
             <div class="aboutme__content col-md-8">
-                <p>Egresada de Laboratoria como desarrolladora Front End Jr., Ing. Informático y Sistemas de profesión. Con conocimientos especializados en el desarrollo de aplicaciones web, con diseño adaptable. Gran capacidad en desarrollo de código organizado, apasionada por la optimización de procesos y con buen manejo de metodología ágile. Soy una persona responsable, autodidacta y analista.</p>
-                <p>Egresada de Laboratoria como desarrolladora Front End Jr., Ing. Informático y Sistemas de profesión. Con conocimientos especializados en el desarrollo de aplicaciones web, con diseño adaptable. Gran capacidad en desarrollo de código organizado, apasionada por la optimización de procesos y con buen manejo de metodología ágile. Soy una persona responsable, autodidacta y analista.</p>
-                <span>Profile</span>
+                <p>Egresada de Laboratoria como desarrolladora Front End Jr., Ing. Informático y Sistemas de profesión. Con conocimientos especializados en el desarrollo de aplicaciones web, con diseño adaptable. Gran capacidad en desarrollo de código organizado, apasionada por la optimización de procesos y con buen manejo de metodología ágile. Me comprometo en cumplir las tareas asignadas, siempre dispuesta a seguir aprendiendo y mejor siendo autodidacta y analista.</p>
+                <h4>Reconocimientos</h4>
+                <p>En el bootcamp de Laboratoria obtuve algunos reconocimientos:</p>
+                <div class="awards">
+                    <div class="col-md-4">
+                        <img src="assets/images/top_5.png" alt="pin">
+                        <p><strong>Una de las 5 mejores</strong><br>
+                            Son las 5 alumnas que obtienen los mayores puntajes, tanto en nivel técnico como en actitud profesional
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="assets/images/best_squad.png" alt="pin">
+                        <p><strong> Mejor squad </strong><br>Es el squad que acumula más puntos y que cumplió el objetivo</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="assets/images/team-player.png" alt="pin">
+                        <p><strong>Best team player</strong><br>
+                            Es la alumna que obtiene el mayor puntaje en trabajo en equipo
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
-        <section id="skills"></section>
+        <section id="skills" class="skills">
+            <div class="aboutme__header col-xs-12 col-md-12">
+                <div class="col-md-6"><h2>SKILLS</h2></div>
+                <div class="col-md-6"><a href="#">MORE NEWS</a></div>
+            </div>
+            <div class="skills__row col-md-12"></div>
+
+        </section>
         <section id="portfolio" class="portfolio">
             <div class="aboutme__header col-md-12">
                 <div class="col-md-6"><h2>PORTAFOLIO</h2></div>
                 <div class="col-md-6"><a href="#">MORE NEWS</a></div>
             </div>
             <div class="portfolio__item col-md-6">
-                <img src="assets/images/labcar-desktop.png" alt="">
-                <h2>LABKAR</h2>
-                <p>Nine ways designers can be more empathic and effective when creating products for emerging markets</p>
-                <span>Guide</span>
+                <img src="assets/images/projects/yape-logo.png" alt="">
+                <h2>YAPE</h2>
+                <p>Yape es la nueva aplicación del Banco de Crédito del Perú, con la que tendrás la libertad de usar tu dinero como quieras, ya que pagar con ella es más rápido, sin pretextos y fácil</p>
+                <h4>Desarrollado con:</h4>
+                <p>HTML | CSS | JavaScript | JQuery | API | Node-js | Express | Promesas</p>
+                <span>Mas detalles</span>
             </div>
             <div class="portfolio__item col-md-6">
-                <img src="assets/images/labcar-mobile.png" alt="">
-                <h2>LABKAR</h2>
-                <p>Nine ways designers can be more empathic and effective when creating products for emerging markets</p>
-                <span>Guide</span>
+                <img src="assets/images/projects/pokedex-logo.png" alt="">
+                <h2>POKÉDEX</h2>
+                <p>Pokédex es una app que muestra una lista de 721 pokemones, con sus respectivo detalle por cada pokemon; mostrados en un modal. Para el desarrollo de esta app, se utilizó The Pokemon RESTful API, siguiendo su documentación en <a href="http://pokeapi.co/docsv2/">pokeapi.co/docsv2</a></p>
+                <h4>Desarrollado con:</h4>
+                <p>HTML | CSS | JavaScript | API de Pokemon | AJAX</p>
+                <span>Mas detalles</span>
             </div>
             <div class="portfolio__item col-md-6">
-                <img src="assets/images/labcar-mobile.png" alt="">
-                <h2>LABKAR</h2>
-                <p>Nine ways designers can be more empathic and effective when creating products for emerging markets</p>
-                <span>Guide</span>
+                <img src="assets/images/projects/labkar-logo.png" alt="">
+                <h2>LABCAR - Servicio de Taxi</h2>
+                <p>Labcar es una empresa de taxis que te permite pedir un taxi cuando quieras y en donde quieras.</p>
+                <h4>Desarrollado con:</h4>
+                <p>HTML | CSS | BOOTSTRAP | JavaScript | APIs | API Google Maps</p>
+                <span>Mas detalles</span>
             </div>
             <div class="portfolio__item col-md-6">
-                <img src="assets/images/labcar-mobile.png" alt="">
-                <h2>LABKAR</h2>
-                <p>Nine ways designers can be more empathic and effective when creating products for emerging markets</p>
+                <img src="assets/images/projects/gasfinder.png" alt="">
+                <h2>GASFINDER</h2>
+                <p>GasFinder es una aplicación que permite ubicar estaciones de servicios (Primax, Pecsa, etc) en base al distrito ingresado en su buscador.</p>
+                <h4>Desarrollado con:</h4>
+                <p>HTML | CSS | JavaScript | API GMAPS | AJAX | Componentes</p>
                 <span>Guide</span>
             </div>
         </section>
         <section id="contact"></section>
     </main>
+    <script src="assets/js/vendor/jquery-3.2.1.min.js"></script>
+    <script src="assets/js/skill.js"></script>
+    <script src="assets/js/index.js"></script>
 </body>
 </html>
