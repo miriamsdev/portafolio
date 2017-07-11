@@ -32,7 +32,8 @@ img {
   top: 0;
   left: 0;
   z-index: 5;
-  background-color: #2c3e50;
+  background: rgba(62, 70, 101, 0.78);
+  //background-color: #2c3e50;
   //-webkit-transition: width 2s;
   //transition: width 2s;
   &__logo img{
@@ -77,7 +78,6 @@ img {
   @extend %flex;
   flex-flow: column wrap;
   height: 100vh;
-  background: rgba(91, 91, 116, 0.41);
   &__text {
     text-align: center;
     overflow: auto;
@@ -115,15 +115,49 @@ img {
     }
   }
   &__content {
-    .awards {
-      @extend %flex;
-      align-items: flex-start;
-    }
     img {
       width: 75px;
+      margin-right: 50px;
+    }
+    .accordion {
+      clear:both;
+      &__title {
+        background-color: #2c3e50;
+        color: #fff;
+        cursor: pointer;
+        padding: 14px;
+        text-align: left;
+        font-size: 14px;
+        border: 1px solid #fff;
+        transition: 0.4s;
+        &.open {
+          background: #3ed6bb;
+        }
+        &.open:after {
+          content:"-";
+        }
+      }
+      &__title:after{
+        content: '+';
+        font-weight: 500;
+        float: right;
+        margin-left: 5px;
+        &:hover {
+          background: #3ed6bb;
+        }
+      }
+      &__content {
+        display: none;
+        padding: 20px;
+        border: 1px solid #3ed6bb;
+        overflow: auto;
+        transition: max-height 0.2s ease-out;
+      }
     }
   }
 }
+
+
 
 //Skills
 .skills {
@@ -134,19 +168,24 @@ img {
     @extend %flex;
     flex-wrap: wrap;
     .box{
-      width: 220px;
-      height: 300px;
+      width: 310px;
+      height: 350px;
       border-radius: 20px;
-      box-shadow: 8px 10px 14px -8px #cecece;
+      //box-shadow: 8px 10px 14px -8px #cecece;
       text-align: center;
       background-color: #f4f1f1;
       padding: 30px 14px 0 14px;
       margin: 14px 35px;
+      h5 {
+        margin-bottom: 30px;
+      }
       div{
         @extend %flex;
         flex-wrap: wrap;
-        justify-content: space-between;
-        height: 80px;
+        p{
+          width: 50%;
+          text-align: left;
+        }
       }
     }
   }
@@ -155,15 +194,15 @@ img {
     font-size: 50px;
   }
 
-  .box:hover{
-    padding-top: 20px;
-    background-color: #fff;
-    -webkit-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    transform: scale(1.05);
-    color: #8C8F98;
-    -webkit-trasnsition: all .05s ease-in-out;
-  }
+  //.box:hover{
+  //  padding-top: 20px;
+  //  background-color: #fff;
+  //  -webkit-transform: scale(1.05);
+  //  -ms-transform: scale(1.05);
+  //  transform: scale(1.05);
+  //  color: #8C8F98;
+  //  -webkit-trasnsition: all .05s ease-in-out;
+  //}
 }
 
 //Portafolio

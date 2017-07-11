@@ -9,7 +9,7 @@ $breakpoints : (xs : 0, sm : 768px, md : 992px, lg : 1200px );
     @for $i from 1 through $columns {
       .col-#{$screen}-#{$i} {
         width: column-width($i);
-        padding: 0 2.5%;
+        float: left;
       }
     }
   }

@@ -1,39 +1,38 @@
 const dataSkill=[
     {icon:"fa fa-laptop",
-     tittle:"Development Skill",
+     tittle:"Development",
      subt:"Lo que me da poder",
-     skill:['HTML5', 'CSS3', 'Java Script', 'JQuery', 'Bootstrap', 'Foundation', 'Materialize', 'Sass']
+     skill:['HTML5', 'CSS3', 'Java Script', 'Bootstrap', 'JQuery', 'Foundation', 'Ajax','Materialize','Node js', 'Sass']
     },
     {icon:"fa fa-github",
-     tittle:"Project Managing Skill",
+     tittle:"Project Managing",
      subt:"Herramientas que uso",
      skill:['GIT', 'Github', 'Heroku', 'Trello']
     },
     {icon:"fa fa-smile-o",
-     tittle:"Personal Skill",
+     tittle:"Personal",
      subt:"Lo que mejor hago",
-     skill:['Trabajo en equipo', 'Responsabilidad']
+     skill:['Trabajo en equipo', 'Proactiva', 'Responsabilidad', 'Detallista']
     }];
-function skillList(arrSkill){
-    let list='';
-    arrSkill.forEach(e =>{
-        list+=`<p>- ${e}</p>`;
-    });
-    return list;
-}
+
+
 $(_=>{
     dataSkill.forEach(element =>{
 
         const skillBox=$('<div class="box col-md-4"></div>');
         const span=$(`<span class="${element.icon} size-icon"></span>`);
         const h2=$(`<h2>${element.tittle}</h2>`);
-        const h3=$(`<h5>${element.subt}</h5>`);
-        const div=$(`<div>${skillList(element.skill)}</div>`);
+        const h5=$(`<h5>${element.subt}</h5>`);
+        const divSkills=$(`<div></div>`);
+
+        element.skill.forEach(e =>{
+            divSkills.append(`<p>- ${e}</p>`);
+        });
 
         skillBox.append(span);
         skillBox.append(h2);
-        skillBox.append(h3);
-        skillBox.append(div);
+        skillBox.append(h5);
+        skillBox.append(divSkills);
         $('.skills__row').append(skillBox);
     });
 });

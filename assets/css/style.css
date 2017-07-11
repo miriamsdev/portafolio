@@ -61,195 +61,195 @@ li {
 @media (min-width: 0) {
   .col-xs-1 {
     width: 8.33333%;
-    padding: 0 2.5%; }
+    float: left; }
 
   .col-xs-2 {
     width: 16.66667%;
-    padding: 0 2.5%; }
+    float: left; }
 
   .col-xs-3 {
     width: 25%;
-    padding: 0 2.5%; }
+    float: left; }
 
   .col-xs-4 {
     width: 33.33333%;
-    padding: 0 2.5%; }
+    float: left; }
 
   .col-xs-5 {
     width: 41.66667%;
-    padding: 0 2.5%; }
+    float: left; }
 
   .col-xs-6 {
     width: 50%;
-    padding: 0 2.5%; }
+    float: left; }
 
   .col-xs-7 {
     width: 58.33333%;
-    padding: 0 2.5%; }
+    float: left; }
 
   .col-xs-8 {
     width: 66.66667%;
-    padding: 0 2.5%; }
+    float: left; }
 
   .col-xs-9 {
     width: 75%;
-    padding: 0 2.5%; }
+    float: left; }
 
   .col-xs-10 {
     width: 83.33333%;
-    padding: 0 2.5%; }
+    float: left; }
 
   .col-xs-11 {
     width: 91.66667%;
-    padding: 0 2.5%; }
+    float: left; }
 
   .col-xs-12 {
     width: 100%;
-    padding: 0 2.5%; } }
+    float: left; } }
 @media (min-width: 768px) {
   .col-sm-1 {
     width: 8.33333%;
-    padding: 0 2.5%; }
+    float: left; }
 
   .col-sm-2 {
     width: 16.66667%;
-    padding: 0 2.5%; }
+    float: left; }
 
   .col-sm-3 {
     width: 25%;
-    padding: 0 2.5%; }
+    float: left; }
 
   .col-sm-4 {
     width: 33.33333%;
-    padding: 0 2.5%; }
+    float: left; }
 
   .col-sm-5 {
     width: 41.66667%;
-    padding: 0 2.5%; }
+    float: left; }
 
   .col-sm-6 {
     width: 50%;
-    padding: 0 2.5%; }
+    float: left; }
 
   .col-sm-7 {
     width: 58.33333%;
-    padding: 0 2.5%; }
+    float: left; }
 
   .col-sm-8 {
     width: 66.66667%;
-    padding: 0 2.5%; }
+    float: left; }
 
   .col-sm-9 {
     width: 75%;
-    padding: 0 2.5%; }
+    float: left; }
 
   .col-sm-10 {
     width: 83.33333%;
-    padding: 0 2.5%; }
+    float: left; }
 
   .col-sm-11 {
     width: 91.66667%;
-    padding: 0 2.5%; }
+    float: left; }
 
   .col-sm-12 {
     width: 100%;
-    padding: 0 2.5%; } }
+    float: left; } }
 @media (min-width: 992px) {
   .col-md-1 {
     width: 8.33333%;
-    padding: 0 2.5%; }
+    float: left; }
 
   .col-md-2 {
     width: 16.66667%;
-    padding: 0 2.5%; }
+    float: left; }
 
   .col-md-3 {
     width: 25%;
-    padding: 0 2.5%; }
+    float: left; }
 
   .col-md-4 {
     width: 33.33333%;
-    padding: 0 2.5%; }
+    float: left; }
 
   .col-md-5 {
     width: 41.66667%;
-    padding: 0 2.5%; }
+    float: left; }
 
   .col-md-6 {
     width: 50%;
-    padding: 0 2.5%; }
+    float: left; }
 
   .col-md-7 {
     width: 58.33333%;
-    padding: 0 2.5%; }
+    float: left; }
 
   .col-md-8 {
     width: 66.66667%;
-    padding: 0 2.5%; }
+    float: left; }
 
   .col-md-9 {
     width: 75%;
-    padding: 0 2.5%; }
+    float: left; }
 
   .col-md-10 {
     width: 83.33333%;
-    padding: 0 2.5%; }
+    float: left; }
 
   .col-md-11 {
     width: 91.66667%;
-    padding: 0 2.5%; }
+    float: left; }
 
   .col-md-12 {
     width: 100%;
-    padding: 0 2.5%; } }
+    float: left; } }
 @media (min-width: 1200px) {
   .col-lg-1 {
     width: 8.33333%;
-    padding: 0 2.5%; }
+    float: left; }
 
   .col-lg-2 {
     width: 16.66667%;
-    padding: 0 2.5%; }
+    float: left; }
 
   .col-lg-3 {
     width: 25%;
-    padding: 0 2.5%; }
+    float: left; }
 
   .col-lg-4 {
     width: 33.33333%;
-    padding: 0 2.5%; }
+    float: left; }
 
   .col-lg-5 {
     width: 41.66667%;
-    padding: 0 2.5%; }
+    float: left; }
 
   .col-lg-6 {
     width: 50%;
-    padding: 0 2.5%; }
+    float: left; }
 
   .col-lg-7 {
     width: 58.33333%;
-    padding: 0 2.5%; }
+    float: left; }
 
   .col-lg-8 {
     width: 66.66667%;
-    padding: 0 2.5%; }
+    float: left; }
 
   .col-lg-9 {
     width: 75%;
-    padding: 0 2.5%; }
+    float: left; }
 
   .col-lg-10 {
     width: 83.33333%;
-    padding: 0 2.5%; }
+    float: left; }
 
   .col-lg-11 {
     width: 91.66667%;
-    padding: 0 2.5%; }
+    float: left; }
 
   .col-lg-12 {
     width: 100%;
-    padding: 0 2.5%; } }
+    float: left; } }
 body {
   background: url("../images/home.jpg") center;
   background-repeat: no-repeat;
@@ -260,7 +260,7 @@ body {
   width: 100%;
   padding: 1% 5%; }
 
-.header__menu, .home, .aboutme, .aboutme__header, .aboutme__image, .aboutme__content .awards, .skills, .skills__row, .skills__row .box div, .portfolio {
+.header__menu, .home, .aboutme, .aboutme__header, .aboutme__image, .skills, .skills__row, .skills__row .box div, .portfolio {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -278,7 +278,7 @@ img {
   top: 0;
   left: 0;
   z-index: 5;
-  background-color: #2c3e50; }
+  background: rgba(62, 70, 101, 0.78); }
   .header__logo img {
     width: 70px; }
   .header__menu {
@@ -296,8 +296,7 @@ img {
 
 .home {
   flex-flow: column wrap;
-  height: 100vh;
-  background: rgba(91, 91, 116, 0.41); }
+  height: 100vh; }
   .home__text {
     text-align: center;
     overflow: auto;
@@ -320,38 +319,59 @@ img {
   .aboutme__image img {
     width: 200px;
     border-radius: 50%; }
-  .aboutme__content .awards {
-    align-items: flex-start; }
   .aboutme__content img {
-    width: 75px; }
+    width: 75px;
+    margin-right: 50px; }
+  .aboutme__content .accordion {
+    clear: both; }
+    .aboutme__content .accordion__title {
+      background-color: #2c3e50;
+      color: #fff;
+      cursor: pointer;
+      padding: 14px;
+      text-align: left;
+      font-size: 14px;
+      border: 1px solid #fff;
+      transition: 0.4s; }
+      .aboutme__content .accordion__title.open {
+        background: #3ed6bb; }
+      .aboutme__content .accordion__title.open:after {
+        content: "-"; }
+    .aboutme__content .accordion__title:after {
+      content: '+';
+      font-weight: 500;
+      float: right;
+      margin-left: 5px; }
+      .aboutme__content .accordion__title:after:hover {
+        background: #3ed6bb; }
+    .aboutme__content .accordion__content {
+      display: none;
+      padding: 20px;
+      border: 1px solid #3ed6bb;
+      overflow: auto;
+      transition: max-height 0.2s ease-out; }
 
 .skills {
   flex-wrap: wrap; }
   .skills__row {
     flex-wrap: wrap; }
     .skills__row .box {
-      width: 220px;
-      height: 300px;
+      width: 310px;
+      height: 350px;
       border-radius: 20px;
-      box-shadow: 8px 10px 14px -8px #cecece;
       text-align: center;
       background-color: #f4f1f1;
       padding: 30px 14px 0 14px;
       margin: 14px 35px; }
+      .skills__row .box h5 {
+        margin-bottom: 30px; }
       .skills__row .box div {
-        flex-wrap: wrap;
-        justify-content: space-between;
-        height: 80px; }
+        flex-wrap: wrap; }
+        .skills__row .box div p {
+          width: 50%;
+          text-align: left; }
   .skills .size-icon {
     font-size: 50px; }
-  .skills .box:hover {
-    padding-top: 20px;
-    background-color: #fff;
-    -webkit-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    transform: scale(1.05);
-    color: #8C8F98;
-    -webkit-trasnsition: all .05s ease-in-out; }
 
 .portfolio {
   flex-flow: wrap;
