@@ -1,6 +1,14 @@
 [{
-    "title" : "YAPE",
+    "title" : "PINTEREST",
     "type":"Mobile and Desktop",
+    "description":"",
+    "img":"yape-mobile.png",
+    "linkCode" : "https://github.com/miriampc/proyecto-final-S5-yape",
+    "linkPage" : "https://app-yape-mpc.herokuapp.com/",
+    "utils" : ["HTML","CSS","JS"]
+},{
+    "title" : "YAPE",
+    "type":"Mobile",
     "description":"Yape es la nueva aplicación del Banco de Crédito del Perú, con la que tendrás la libertad de usar tu dinero como quieras, ya que pagar con ella es más rápido, sin pretextos y fácil",
     "img":"yape-mobile.png",
     "linkCode" : "https://github.com/miriampc/proyecto-final-S5-yape",
