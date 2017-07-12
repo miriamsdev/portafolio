@@ -54,20 +54,9 @@ img {
     }
     li:hover{
       border-bottom: 4px solid #3ed6bb;
+      //background: #3ed6bb;
     }
   }
-  //&__scroll {
-  //  background-color: #3ed6bb;
-  //  a {
-  //    color: #fff;
-  //  }
-  //  img {
-  //    width: 70px;
-  //  }
-  //  a:hover {
-  //    border-bottom: 4px solid #fff;
-  //  }
-  //}
 }
 //Main Content
 .content {
@@ -213,9 +202,24 @@ img {
   align-items: flex-start;
   &__item {
     margin-bottom: 70px;
-    img {
-      width: 200px;
-    }
+
+  }
+  .owl-carousel .owl-item img {
+    display: block;
+    width: 250px;
+    height:400px;
+    margin: 0 auto;
+  }
+
+  .owl-theme .owl-nav [class*=owl-] {
+    color: #fff;
+    font-size: 14px;
+    margin: 5px;
+    padding: 4px 10px;
+    background: #3ed6bb;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 3px;
   }
 
 }

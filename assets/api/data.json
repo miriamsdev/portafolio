@@ -1,0 +1,33 @@
+[{
+    "title" : "YAPE",
+    "type":"Mobile and Desktop",
+    "description":"Yape es la nueva aplicación del Banco de Crédito del Perú, con la que tendrás la libertad de usar tu dinero como quieras, ya que pagar con ella es más rápido, sin pretextos y fácil",
+    "img":"yape-mobile.png",
+    "linkCode" : "https://github.com/miriampc/proyecto-final-S5-yape",
+    "linkPage" : "https://app-yape-mpc.herokuapp.com/",
+    "utils" : ["HTML","CSS","JS"]
+},{
+    "title" : "LABCAR",
+    "type":"Mobile and Desktop",
+    "description":"Labcar es una empresa de taxis que te permite pedir un taxi cuando quieras y en donde quieras.",
+    "img":"labcar-mobile.png",
+    "linkCode" : "https://github.com/miriampc/proyecto-final-sprint4",
+    "linkPage" : "https://miriampc.github.io/proyecto-final-sprint4/",
+    "utils" : ["HTML","CSS","BOOTSTRAP","JavaScript","APIs","API Google Maps"]
+},{
+    "title" : "POKÉDEX",
+    "type":"Mobile and Desktop",
+    "description":"Pokédex es una app que muestra una lista de 721 pokemones, con sus respectivo detalle por cada pokemon; mostrados en un modal. Para el desarrollo de esta app, se utilizó The Pokemon RESTful API, siguiendo su documentación en <a href='http://pokeapi.co/docsv2/'>pokeapi.co/docsv2</a>",
+    "img":"pokedex-mobile.png",
+    "linkCode" : "https://github.com/miriampc/pokedex",
+    "linkPage" : "https://miriampc.github.io/pokedex/",
+    "utils" : ["HTML","CSS","JavaScript","API de Pokemon","AJAX"]
+},{
+    "title" : "GASFINDER",
+    "type":"Mobile and Desktop",
+    "description":"GasFinder es una aplicación que permite ubicar estaciones de servicios (Primax, Pecsa, etc) en base al distrito ingresado en su buscador.",
+    "img":"gasfinder-mobile.png",
+    "linkCode" : "https://github.com/miriampc/gasfinder",
+    "linkPage" : "https://miriampc.github.io/gasfinder/",
+    "utils" : ["HTML","CSS","JavaScript","API GMAPS","AJAX","Componentes"]
+}]

@@ -378,7 +378,19 @@ img {
   align-items: flex-start; }
   .portfolio__item {
     margin-bottom: 70px; }
-    .portfolio__item img {
-      width: 200px; }
+  .portfolio .owl-carousel .owl-item img {
+    display: block;
+    width: 250px;
+    height: 400px;
+    margin: 0 auto; }
+  .portfolio .owl-theme .owl-nav [class*=owl-] {
+    color: #fff;
+    font-size: 14px;
+    margin: 5px;
+    padding: 4px 10px;
+    background: #3ed6bb;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 3px; }
 
 /*# sourceMappingURL=style.css.map */
