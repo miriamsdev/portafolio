@@ -1,17 +1,17 @@
 const dataSkill=[
     {icon:"fa fa-laptop",
      tittle:"Development",
-     subt:"Lo que me da poder",
-     skill:['HTML5', 'CSS3', 'Java Script', 'Bootstrap', 'JQuery', 'Foundation', 'Ajax','Materialize','Node js', 'Sass']
+     subt:"Lo que me empodera",
+     skill:['HTML5', 'CSS3', 'Java Script', 'Bootstrap', 'JQuery', 'Foundation', 'Ajax','Materialize','Node js', 'Sass','Git']
     },
     {icon:"fa fa-github",
-     tittle:"Project Managing",
-     subt:"Herramientas que uso",
-     skill:['GIT', 'Github', 'Heroku', 'Trello']
+     tittle:"Project Management",
+     subt:"Lo que me permite compartir en comunidad",
+     skill:['Github', 'Heroku', 'Trello']
     },
     {icon:"fa fa-smile-o",
      tittle:"Personal",
-     subt:"Lo que mejor hago",
+     subt:"Lo que puedo contribuir",
      skill:['Trabajo en equipo', 'Proactiva', 'Responsabilidad', 'Detallista']
     }];
 
@@ -26,7 +26,7 @@ $(_=>{
         const divSkills=$(`<div></div>`);
 
         element.skill.forEach(e =>{
-            divSkills.append(`<p>- ${e}</p>`);
+            divSkills.append(`<p>${e}</p>`);
         });
 
         skillBox.append(span);

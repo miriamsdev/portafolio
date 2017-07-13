@@ -1,3 +1,10 @@
+//Colors
+//$second-color: #00cc99;
+$second-color: #01d1b2;//bulma
+$primary-color:#2c3e50;
+$third-color:#cfcfce;
+//$third-color:#e6e6e6;
+
 @mixin property($family,$weight,$size,$line-height,$color){
   font:{
     family: $family;

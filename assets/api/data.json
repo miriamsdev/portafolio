@@ -1,11 +1,11 @@
 [{
     "title" : "PINTEREST",
     "type":"Mobile and Desktop",
-    "description":"",
-    "img":"yape-mobile.png",
-    "linkCode" : "https://github.com/miriampc/proyecto-final-S5-yape",
-    "linkPage" : "https://app-yape-mpc.herokuapp.com/",
-    "utils" : ["HTML","CSS","JS"]
+    "description":"Este sitio web es una replica de Pinterest, se trabajo de forma colaborativa en un grupo de 3 personas, tuve el rol de diseñar el grid de imagenes de los pines",
+    "img":"pinterest-mobile.png",
+    "linkCode" : "https://github.com/miriampc/pinterest",
+    "linkPage" : "https://landing-pinterest.herokuapp.com/",
+    "utils" : ["HTML","CSS","JavaScript", "Sass", "Gulp"]
 },{
     "title" : "YAPE",
     "type":"Mobile",
@@ -13,7 +13,7 @@
     "img":"yape-mobile.png",
     "linkCode" : "https://github.com/miriampc/proyecto-final-S5-yape",
     "linkPage" : "https://app-yape-mpc.herokuapp.com/",
-    "utils" : ["HTML","CSS","JS"]
+    "utils" : ["HTML","CSS","JavaScript"]
 },{
     "title" : "LABCAR",
     "type":"Mobile and Desktop",
@@ -32,7 +32,7 @@
     "utils" : ["HTML","CSS","JavaScript","API de Pokemon","AJAX"]
 },{
     "title" : "GASFINDER",
-    "type":"Mobile and Desktop",
+    "type":"Mobile",
     "description":"GasFinder es una aplicación que permite ubicar estaciones de servicios (Primax, Pecsa, etc) en base al distrito ingresado en su buscador.",
     "img":"gasfinder-mobile.png",
     "linkCode" : "https://github.com/miriampc/gasfinder",

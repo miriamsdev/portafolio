@@ -14,6 +14,7 @@ const carouselPortfolio = (data)=> {
                 <div class="col-xs-12 col-md-6"><img src="assets/images/projects/${elem.img}" alt=""></div>
                 <div class="col-xs-12 col-md-6">
                     <h2>${elem.title}</h2>
+                    <h4>Version: ${elem.type}</h4>
                     <p>${elem.description}</p>
                     <h4>Desarrollado con:</h4>
                 </div>

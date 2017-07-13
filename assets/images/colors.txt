@@ -1,7 +1,0 @@
-#E7ECEF claro gris
-#9BE564 verde limon
-#31E981 verde
-
-#38E4AE verde
-
-#00FFC5
