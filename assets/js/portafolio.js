@@ -13,10 +13,9 @@ const carouselPortfolio = (data)=> {
         const  item=$(`<div class="portfolio__item">
                 <div class="col-xs-12 col-md-6"><img src="assets/images/projects/${elem.img}" alt=""></div>
                 <div class="col-xs-12 col-md-6">
-                    <h2>${elem.title}</h2>
-                    <h4>Version: ${elem.type}</h4>
-                    <p>${elem.description}</p>
-                    <h4>Desarrollado con:</h4>
+                    <h4>${elem.title} : ${elem.type}</h4>
+                    <p class="hide-xs">${elem.description}</p>
+                    <p><strong>Desarrollado con:</strong></p>
                 </div>
             </div>`);
         const utils = $(`<div></div>`);
@@ -24,9 +23,9 @@ const carouselPortfolio = (data)=> {
             utils.append(`<span>${e} | </span>`);
         });
 
-        const links = $(`<br><br><div>
-                            <a href="${elem.linkCode}"><span class="fa fa-code">CODE</span></a>
-                            <a href="${elem.linkPage}"><span class="fa fa-laptop">WEB PAGE</span></a>
+        const links = $(`<br><br><div class="col-xs-12">
+                            <a href="${elem.linkCode}" target="_blank"><i class="fa fa-code"></i>VER CÓDIGO</a>
+                            <a href="${elem.linkPage}" target="_blank"><i class="fa fa-laptop"></i>VER APP</a>
                          </div>`);
 
         item.append(utils);
@@ -53,6 +52,6 @@ const carouselPortfolio = (data)=> {
         autoplayTimeout:3000,
         autoplayHoverPause:true
     });
-$('#portfolio').append(divCarousel);
+    $('#portfolio').append(divCarousel);
     // return divCarousel;
  };

@@ -17,8 +17,17 @@ const state = {
     project: null
 };
 
-//Function: Acordeon
+
 $( _ => {
+//Event: hamburguer menu
+    $('#icon-menu').on('click', ()=>{
+        $('#menu-collapse').toggleClass("active");
+    });
+    $('#menu-collapse li').on('click', ()=>{
+        $('#menu-collapse').toggleClass("active");
+    });
+
+//Evento: Acordeon
     $(".accordion__title").click(function(e){
         e.preventDefault();
         $(this).toggleClass("open");

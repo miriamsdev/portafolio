@@ -2,7 +2,8 @@ const dataSkill=[
     {icon:"fa fa-laptop",
      tittle:"Development",
      subt:"Lo que me empodera",
-     skill:['HTML5', 'CSS3', 'Java Script', 'Bootstrap', 'JQuery', 'Foundation', 'Ajax','Materialize','Node js', 'Sass','Git']
+     skill:['HTML5', 'CSS3', 'Java Script', 'Bootstrap', 'JQuery', 'Foundation', 'Ajax','Materialize','Node js', 'Sass','Git'],
+     color:""
     },
     {icon:"fa fa-github",
      tittle:"Project Management",
@@ -18,15 +19,14 @@ const dataSkill=[
 
 $(_=>{
     dataSkill.forEach(element =>{
-
         const skillBox=$('<div class="box col-md-4"></div>');
         const span=$(`<span class="${element.icon} size-icon"></span>`);
-        const h2=$(`<h2>${element.tittle}</h2>`);
+        const h2=$(`<h4>${element.tittle}</h4>`);
         const h5=$(`<h5>${element.subt}</h5>`);
-        const divSkills=$(`<div></div>`);
+        const divSkills=$(`<ul></ul>`);
 
         element.skill.forEach(e =>{
-            divSkills.append(`<p>${e}</p>`);
+            divSkills.append(`<li>${e}</li>`);
         });
 
         skillBox.append(span);

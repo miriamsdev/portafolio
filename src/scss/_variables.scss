@@ -1,10 +1,43 @@
 //Colors
 //$second-color: #00cc99;
-$second-color: #01d1b2;//bulma
-$primary-color:#2c3e50;
+$primary-color: #01d1b2;//bulma
+$second-color:#2c3e50;
 $third-color:#cfcfce;
-//$third-color:#e6e6e6;
+$text-color:#ffffff;
+$text-size:7rem;
 
+%container {
+  width: 100%;
+  padding: 1% 10%;
+}
+%flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%btn-second {
+  padding: 10px 20px;
+  background: $primary-color;
+  color: $text-color;
+  border-radius: 5px;
+  font-weight: lighter;
+  i {
+    font-size: 1.2rem;
+    margin-right: 10px;
+    color: #fff;
+  }
+}
+%btn-second:hover {
+  background: $second-color;
+  color: $primary-color;
+  i{
+    margin-right: 14px;
+  }
+}
+.hide-md {
+  display: none;
+}
 @mixin property($family,$weight,$size,$line-height,$color){
   font:{
     family: $family;
@@ -16,24 +49,11 @@ $third-color:#cfcfce;
   margin-bottom:10px;
 }
 
-h1{@include property('Rancho',normal,7rem,50px,#424242);}
-h2{@include property('Metrophobic',normal,24px,32px,#424242);}
-h3{@include property('Metrophobic',500,2rem,35px,#424242);}
-p{@include property('Roboto',normal,16px,24px,#414549);}
-span{@include property('Roboto Mono',normal,16px,16px,#5f6368);}
-li{@include property('Roboto',500,16px,14px,#414549);}
-
-
-//@mixin grayscale_element($value) {
-//  -webkit-filter: #{"grayscale(#{$value})"};
-//  -moz-filter: #{"grayscale(#{$value})"};
-//  filter:#{"grayscale(#{$value})"};
-//}
-//
-//.grayscale {
-//  @include grayscale_element(100%);
-//  transition: all 200ms ease-in-out;
-//  &:hover {
-//    @include grayscale_element(0);
-//  }
-//}
+h1{@include property('Rancho',normal,$text-size,$text-size/2,$text-color);}
+h2{@include property('Metrophobic',500,$text-size/2,2rem,$text-color);}
+h3{@include property('Metrophobic',500,2.7rem,3rem,#424242);}
+h4{@include property('Metrophobic',500,1.5rem,1.4rem,#424242);}
+p{@include property('Roboto',normal,1rem,1.5rem,#414549);}
+span{@include property('Roboto',normal,1rem,1.1rem,#5f6368);}
+a{@include property('Roboto Mono',lighten,1rem,1.1rem,#5f6368);}
+li{@include property('Roboto',500,1rem,.9rem,#414549);}

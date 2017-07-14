@@ -2,29 +2,7 @@
 @import 'reset';
 @import "grid";
 @import "skill";
- body {
-   background: url("../images/home.jpg") center;
-   background-repeat: no-repeat;
-   background-size: cover;
-   height: 100vh;
- }
-%container {
-  width: 100%;
-  padding: 1% 5%;
-}
-%flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-img {
-  width: 100%;
-}
-%border {
-  border-top: 4px solid #3ed6bb;
-  margin-top: 50px;
-  padding-top: 50px;
-}
+
 //Header
 .header {
   @extend %container;
@@ -33,9 +11,6 @@ img {
   left: 0;
   z-index: 5;
   background: rgba(62, 70, 101, 0.78);
-  //background-color: #2c3e50;
-  //-webkit-transition: width 2s;
-  //transition: width 2s;
   &__logo img{
     width: 70px;
   }
@@ -53,51 +28,51 @@ img {
       font-size: 1.1rem;
     }
     li:hover{
-      border-bottom: 4px solid #3ed6bb;
-      //background: #3ed6bb;
+      border-bottom: 4px solid $primary-color;
     }
   }
 }
-//Main Content
-.content {
-  @extend %container;
-}
+
 //Home
 .home {
+  background-attachment: fixed;
+  background-image: url("../images/home.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 100vh;
+
   @extend %flex;
   flex-flow: column wrap;
-  height: 100vh;
   &__text {
     text-align: center;
     overflow: auto;
     padding-top: 60px;
     h1 {
-      text-shadow: 5px 5px 15px #3ed6bb;
+      text-shadow: 5px 5px 15px $primary-color;
       margin-bottom: 70px;
     }
-    h1,h3 {
-      font-weight: 500;
-      color: #f4f1f1;
+    h4 {
+      color: $text-color;
     }
   }
 }
-
+.bg-code {
+  background: url('../images/codeon.png');
+  background-attachment: fixed;
+  background-position: left;
+  background-repeat: no-repeat;
+}
 //About me
 .aboutme {
-  @extend %border;
+  @extend %container;
   @extend %flex;
   flex-wrap: wrap;
   &__header {
-    @extend %flex;
-    margin-bottom: 1.2rem;
-    justify-content: space-between;
-    a {
-      float: right;
-      color: #4285f4;
-    }
+    margin: 1.8rem 0;
+    text-align: center;
   }
   &__image {
-    @extend %flex;
     img{
       width: 200px;
       border-radius: 50%;
@@ -106,7 +81,7 @@ img {
   &__content {
     img {
       width: 75px;
-      margin-right: 50px;
+      margin-right: 14px;
     }
     .accordion {
       clear:both;
@@ -120,25 +95,26 @@ img {
         border: 1px solid #fff;
         transition: 0.4s;
         &.open {
-          background: #3ed6bb;
+          background: $primary-color;
         }
         &.open:after {
           content:"-";
+          font-size: x-large;
         }
       }
       &__title:after{
         content: '+';
-        font-weight: 500;
+        font-size: x-large;
         float: right;
         margin-left: 5px;
         &:hover {
-          background: #3ed6bb;
+          background: $primary-color;
         }
       }
       &__content {
         display: none;
         padding: 20px;
-        border: 1px solid #3ed6bb;
+        border: 1px solid $primary-color;
         overflow: auto;
         transition: max-height 0.2s ease-out;
       }
@@ -146,63 +122,55 @@ img {
   }
 }
 
-
-
 //Skills
 .skills {
-  @extend %flex;
-  @extend %border;
-  flex-wrap: wrap;
+  @extend %container;
+  background: $second-color;
+  //height: 580px;
   &__row {
-    @extend %flex;
-    flex-wrap: wrap;
     .box{
-      width: 310px;
+      width: 280px;
       height: 350px;
       border-radius: 20px;
       //box-shadow: 8px 10px 14px -8px #cecece;
       text-align: center;
       background-color: #f4f1f1;
       padding: 30px 14px 0 14px;
-      margin: 14px 35px;
+      margin: 14px 28px;
       h5 {
         margin-bottom: 30px;
       }
-      div{
+      ul{
         @extend %flex;
         flex-wrap: wrap;
-        p{
+        li{
           width: 50%;
           text-align: left;
+          font-weight: 400;
         }
       }
     }
   }
-
   .size-icon{
     font-size: 50px;
   }
-
-  //.box:hover{
-  //  padding-top: 20px;
-  //  background-color: #fff;
-  //  -webkit-transform: scale(1.05);
-  //  -ms-transform: scale(1.05);
-  //  transform: scale(1.05);
-  //  color: #8C8F98;
-  //  -webkit-trasnsition: all .05s ease-in-out;
-  //}
 }
 
 //Portafolio
 .portfolio {
+  @extend %container;
   @extend %flex;
-  @extend %border;
   flex-flow: wrap;
   align-items: flex-start;
   &__item {
     margin-bottom: 70px;
-
+    a {
+      @extend %btn-second;
+      color: $text-color;
+    }
+  }
+  .owl-carousel.owl-loaded {
+    position: relative;
   }
   .owl-carousel .owl-item img {
     display: block;
@@ -210,16 +178,83 @@ img {
     height:400px;
     margin: 0 auto;
   }
-
+  .owl-theme .owl-nav {
+    margin: 0;
+  }
   .owl-theme .owl-nav [class*=owl-] {
+    position: absolute;
+    top:50%;
     color: #fff;
-    font-size: 14px;
-    margin: 5px;
     padding: 4px 10px;
-    background: #3ed6bb;
-    display: inline-block;
+    background: $primary-color;
     cursor: pointer;
-    border-radius: 3px;
+  }
+  .owl-prev {
+    left: -14px;
+  }
+  .owl-next {
+    right: -14px;
   }
 
+}
+
+.contact{
+  @extend %container;
+  background: url(../images/p6.png);
+  background-repeat: repeat;
+  height: 400px;
+  clear: both;
+  i {
+    font-size: 2rem;
+    color: $second-color;
+  }
+  .btn {
+    @extend %btn-second;
+  }
+}
+
+footer{
+  @extend %flex;
+  background: $second-color;
+  height: 70px;
+  span {
+    color: #fff;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .hide-xs {
+    display: none;
+  }
+  .active{
+    display: block;
+  }
+  .header {
+    &__logo img{
+      width: 50px;
+    }
+    &__menu-mobile {
+      span{
+        color: $text-color;
+        font-size: $text-size - 5rem;
+      }
+      ul {
+        li a{
+          color: $text-color;
+        }
+      }
+    }
+  }
+  .home {
+    h1 {
+      font-size: $text-size - 2.2rem;
+      margin-bottom: 30px;
+    }
+    h2 {
+      font-size: $text-size - 4.8rem;
+    }
+  }
+  .bg-code {
+    background: #fff;
+  }
 }
