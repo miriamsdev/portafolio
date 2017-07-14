@@ -1,15 +1,34 @@
 $columns : 12;
 $column-width : 100%/$columns;
 $breakpoints : (xs : 0, sm : 768px, md : 992px, lg : 1200px );
+.col{
+  float:left;
+  //padding:0 1.25rem;
+  min-height:1px;
+}
+
+.row {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 @function column-width($column){
   @return $column-width*$column;
 }
 @mixin column($screen, $min-width){
   @media (min-width:$min-width){
     @for $i from 1 through $columns {
-      .col-#{$screen}-#{$i} {
+      .#{$screen}-#{$i} {
         width: column-width($i);
-        float: left;
+        margin-left: auto;
+        left: auto;
+        right: auto;
       }
     }
   }

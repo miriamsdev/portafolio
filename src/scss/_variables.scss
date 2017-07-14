@@ -9,6 +9,7 @@ $text-size:7rem;
 %container {
   width: 100%;
   padding: 1% 10%;
+  overflow: auto;
 }
 %flex {
   display: flex;
