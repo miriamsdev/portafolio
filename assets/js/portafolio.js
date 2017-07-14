@@ -10,26 +10,31 @@ $.getJSON('assets/api/data.json',(json)=>{
 const carouselPortfolio = (data)=> {
     const divCarousel = $('<div class="owl-carousel owl-theme"></div>');
     data.forEach((elem)=>{
-        const  item=$(`<div class="portfolio__item">
-                <div class="col-xs-12 col-md-6"><img src="assets/images/projects/${elem.img}" alt=""></div>
-                <div class="col-xs-12 col-md-6">
-                    <h4>${elem.title} : ${elem.type}</h4>
-                    <p class="hide-xs">${elem.description}</p>
-                    <p><strong>Desarrollado con:</strong></p>
-                </div>
-            </div>`);
+        const  item = $(`<div class="portfolio__item">
+                            <div class="col-xs-12 col-md-6">
+                                <img src="assets/images/projects/${elem.img}" alt="">
+                            </div>
+                         </div>`);
+
         const utils = $(`<div></div>`);
         elem.utils.forEach( e =>{
             utils.append(`<span>${e} | </span>`);
         });
+        const  itemText = $(`<div class="col-xs-12 col-md-6">
+                                <h4>${elem.title} : ${elem.type}</h4>
+                                <p class="hide-xs">${elem.description}</p>
+                                <p><strong>Desarrollado con:</strong></p>
+                            </div>`);
 
-        const links = $(`<br><br><div class="col-xs-12">
+
+        const links = $(`<br><br><div class="col-xs-12 col-md-12">
                             <a href="${elem.linkCode}" target="_blank"><i class="fa fa-code"></i>VER CÓDIGO</a>
                             <a href="${elem.linkPage}" target="_blank"><i class="fa fa-laptop"></i>VER APP</a>
                          </div>`);
 
-        item.append(utils);
-        item.append(links);
+        itemText.append(utils);
+        itemText.append(links);
+        item.append(itemText);
         divCarousel.append(item);
     });
 
