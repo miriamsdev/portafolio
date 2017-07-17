@@ -13,10 +13,10 @@ li {
 img {
   width: 100%;
 }
+#name{
+  text-transform: capitalize;
+}
 
-section {
-  padding: 3rem 0;
-  &:after{
-    clear: both;
-  }
+#email{
+  text-transform: lowercase;
 }

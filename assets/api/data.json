@@ -1,41 +1,42 @@
 [{
     "title" : "PINTEREST",
-    "type":"Mobile and Desktop",
-    "description":"Este sitio web es una replica de Pinterest, se trabajo de forma colaborativa en un grupo de 3 personas, tuve el rol de diseñar el grid de imagenes de los pines",
-    "img":"pinterest-mobile.png",
+    "type":"Proyecto grupal - Mobile y Desktop",
+    "description":"Este sitio web es una réplica de Pinterest, se trabajó de forma colaborativa integrado por 3 personas, tuve el rol de implementar el grid de imagenes de los pines, cargados desde la API de Pinterest",
+    "img":"pinterest.jpg",
     "linkCode" : "https://github.com/miriampc/pinterest",
     "linkPage" : "https://landing-pinterest.herokuapp.com/",
-    "utils" : ["HTML","CSS","JavaScript", "Sass", "Gulp"]
+    "utils" : ["HTML","CSS","JavaScript ES6", "JQuery","Ajax","Sass", "Gulp", "API Pinterest","Node js"]
 },{
     "title" : "YAPE",
-    "type":"Mobile",
-    "description":"Yape es la nueva aplicación del Banco de Crédito del Perú, con la que tendrás la libertad de usar tu dinero como quieras, ya que pagar con ella es más rápido, sin pretextos y fácil",
-    "img":"yape-mobile.png",
+    "type":"Proyecto final Sprint 5 - Mobile",
+    "description":"Yape es la nueva aplicación del BCP, con la que tendrás la libertad de usar tu dinero como quieras, ya que pagar con ella es más rápido, sin pretextos y fácil",
+    "img":"yape-mob.jpg",
     "linkCode" : "https://github.com/miriampc/proyecto-final-S5-yape",
     "linkPage" : "https://app-yape-mpc.herokuapp.com/",
-    "utils" : ["HTML","CSS","JavaScript"]
-},{
-    "title" : "LABCAR",
-    "type":"Mobile and Desktop",
-    "description":"Labcar es una empresa de taxis que te permite pedir un taxi cuando quieras y en donde quieras.",
-    "img":"labcar-mobile.png",
-    "linkCode" : "https://github.com/miriampc/proyecto-final-sprint4",
-    "linkPage" : "https://miriampc.github.io/proyecto-final-sprint4/",
-    "utils" : ["HTML","CSS","BOOTSTRAP","JavaScript","APIs","API Google Maps"]
-},{
-    "title" : "POKÉDEX",
-    "type":"Mobile and Desktop",
-    "description":"Pokédex es una app que muestra una lista de 721 pokemones, con sus respectivo detalle por cada pokemon; mostrados en un modal. Para el desarrollo de esta app, se utilizó The Pokemon RESTful API, siguiendo su documentación en <a href='http://pokeapi.co/docsv2/'>pokeapi.co/docsv2</a>",
-    "img":"pokedex-mobile.png",
-    "linkCode" : "https://github.com/miriampc/pokedex",
-    "linkPage" : "https://miriampc.github.io/pokedex/",
-    "utils" : ["HTML","CSS","JavaScript","API de Pokemon","AJAX"]
+    "utils" : ["HTML","CSS","JavaScript ES6","JQuery","Ajax","Promises","API","Node js"]
 },{
     "title" : "GASFINDER",
-    "type":"Mobile",
+    "type":"Proyecto aplicando Ajax - Mobile",
     "description":"GasFinder es una aplicación que permite ubicar estaciones de servicios (Primax, Pecsa, etc) en base al distrito ingresado en su buscador.",
-    "img":"gasfinder-mobile.png",
+    "img":"gasfinder.png",
     "linkCode" : "https://github.com/miriampc/gasfinder",
     "linkPage" : "https://miriampc.github.io/gasfinder/",
-    "utils" : ["HTML","CSS","JavaScript","API GMAPS","AJAX","Componentes"]
-}]
+    "utils" : ["HTML","CSS","JavaScript ES6","API GMAPS","JQuery","AJAX","Componentes (React Style)"]
+},{
+    "title" : "LABCAR",
+    "type":"Proyecto final Sprint 4 - Mobile y Desktop",
+    "description":"Labcar es una empresa de taxis que te permite pedir un taxi cuando quieras y en donde quieras.",
+    "img":"labcar.png",
+    "linkCode" : "https://github.com/miriampc/proyecto-final-sprint4",
+    "linkPage" : "https://miriampc.github.io/proyecto-final-sprint4/",
+    "utils" : ["HTML","CSS","Framework Bootstrap","JavaScript","APIs","API Google Maps"]
+},{
+    "title" : "FAB",
+    "type":"Proyecto de Maquetado - Mobile y Desktop",
+    "description":"FAB es una empresa dedicada al diseño, ayudar a los clientes a descubrir productos divertidos y únicos",
+    "img":"fab.png",
+    "linkCode" : "https://github.com/miriampc/fab-foundation",
+    "linkPage" : "https://miriampc.github.io/fab-foundation/",
+    "utils" : ["HTML","CSS","JavaScript","Framework Foundation","Owl Carousel"]
+}
+]

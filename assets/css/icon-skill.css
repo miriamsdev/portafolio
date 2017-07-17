@@ -1,0 +1,66 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts-skill/icomoon.eot?g5uzsg');
+  src:  url('../fonts-skill/icomoon.eot?g5uzsg#iefix') format('embedded-opentype'),
+    url('../fonts-skill/icomoon.ttf?g5uzsg') format('truetype'),
+    url('../fonts-skill/icomoon.woff?g5uzsg') format('woff'),
+    url('../fonts-skill/icomoon.svg?g5uzsg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  font-size: 35px;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-git:before {
+  content: "\e900";
+  color: #f14e32;
+}
+.icon-heroku:before {
+  content: "\e901";
+  color: #430098;
+}
+.icon-trello:before {
+  content: "\e902";
+  color: #0079bf;
+}
+.icon-bootstrap:before {
+  content: "\e903";
+  color: #563d7c;
+}
+.icon-github:before {
+  content: "\e904";
+}
+.icon-html5:before {
+  content: "\e905";
+  color: #e34f26;
+}
+.icon-css3:before {
+  content: "\e906";
+  color: #1572b6;
+}
+.icon-javascript:before {
+  content: "\e907";
+  color: #f7df1e;
+}
+.icon-sass:before {
+  content: "\e908";
+  color: #c69;
+}
+.icon-gulp:before {
+  content: "\e909";
+  color: #da4648;
+}

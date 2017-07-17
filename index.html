@@ -8,10 +8,10 @@
     <meta name="description" content="Sitio web, de Miriam Peralta Castañeda - Front End Developer">
     <meta name="author" content="Miriam Peralta Castañeda">
     <title>Miriam Peralta Castañeda</title>
-    <link href="https://fonts.googleapis.com/css?family=Metrophobic|Rancho" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700|Roboto:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Metrophobic|Rancho|Roboto+Mono:300,400,500|Roboto:400,500,700" rel="stylesheet">
     <link rel="icon" href="assets/images/logo-icon.png">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/icon-skill.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -30,7 +30,7 @@
             </ul>
         </nav>
         <nav class="header__menu-mobile active hide-md">
-            <div class="header__logo col xs-11">
+            <div class="header__logo col xs-10">
                 <a href="#home"><img src="assets/images/logo-miriam.png" alt="mi logo"></a>
             </div>
             <div class="col xs-1">
@@ -92,10 +92,10 @@
         </section>
     </section>
     <section id="skills" class="skills">
-        <div class="aboutme__header col-xs-12 col-md-12">
+        <div class="aboutme__header col xs-12 md-12">
             <h3>SKILLS</h3>
         </div>
-        <div class="skills__row col-md-12"></div>
+        <div class="skills__row col md-12"></div>
     </section>
     <section id="portfolio" class="portfolio">
         <div class="aboutme__header col-md-12">
@@ -103,19 +103,34 @@
         </div>
     </section>
     <section id="contact" class="contact">
-        <div class="aboutme__header col-xs-12 col-md-12">
+        <div class="aboutme__header col xs-12 md-12">
             <h3>CONTACTO</h3>
         </div>
-        <div class="col-md-6">
-            <p><i class="fa fa-envelope" aria-hidden="true"></i> miiriampc@gmail.com</p>
-            <p><i class="fa fa-mobile" aria-hidden="true"></i> 983741185</p>
-        </div>
-        <div class="col-md-6">
-            <div class="col-md-6">
+        <form action="" id="form-contact" class="contact__form col md-6">
+            <div class="input-box">
+                <input type="text" id="name" name="Nombre" required="">
+                <label for="name" class="label">Nombre Completo</label>
+            </div>
+            <div class="input-box">
+                <input type="email" id="email" name="Email" required="">
+                <label for="email" class="label">Correo electrónico</label>
+            </div>
+            <div class="input-box">
+                <textarea name="Mensaje" id="message" cols="30" rows="6"></textarea>
+                <label for="message" class="label">Mensaje</label>
+            </div>
+            <input id="btn-submit" type="submit" value="Enviar">
+        </form>
+        <div class="col md-6">
+            <div class="">
+                <p><i class="fa fa-envelope" aria-hidden="true"></i> miiriampc@gmail.com</p>
+                <p><i class="fa fa-mobile" aria-hidden="true"></i> 983741185</p>
+            </div>
+            <div class="">
                 <a href="https://github.com/miriampc/" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a>
                 <a href="https://www.linkedin.com/in/miriam-peralta-castañeda/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
             </div>
-            <div col-md-6>
+            <div class="">
                 <a class="btn" href="assets/resources/CV-Miriam.pdf" target="_blank">
                     <i class="fa fa-address-card" aria-hidden="true"></i>Mira mi CV
                 </a>
@@ -123,12 +138,13 @@
         </div>
     </section>
     <footer>
-        <span>Coded by me © 2017.</span>
+        <span>Coded by Miriam Peralta Castañeda &copy 2017.</span>
     </footer>
     <script src="assets/js/vendor/jquery-3.2.1.min.js"></script>
     <script src="assets/js/vendor/owl.carousel.min.js"></script>
     <script src="assets/js/skill.js"></script>
     <script src="assets/js/portafolio.js"></script>
+    <script src="assets/js/contact.js"></script>
     <script src="assets/js/index.js"></script>
 </body>
 </html>

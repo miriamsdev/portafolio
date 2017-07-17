@@ -1,0 +1,20 @@
+@mixin support($property, $value, $prefixes: ()) {
+  @each $prefix in $prefixes {
+    #{'-' + $prefix + '-' + $property}: $value;
+  }
+  #{$property}: $value;
+}
+%icon-skill-long {
+  width: 50px;
+  height: 50px;
+}
+$icon-skill: (jquery,nodejs,materialize,foundation,ajax);
+
+@each $skill in $icon-skill {
+  .icon-#{$skill} {
+    background-image: url('../images/icons/#{$skill}.png');
+    background-repeat:no-repeat;
+    background-size: 50px;
+    @extend %icon-skill-long;
+  }
+}

@@ -2,7 +2,7 @@
 $(window).scroll(() => {
     const scrollTop = $(this).scrollTop();
     if (scrollTop > 500) {
-        $('.header').css('background', '#3ed6bb');
+        $('.header').css('background', 'rgba(62, 214, 187,0.9)');
         $('.header__menu a').css('color', '#fff');
         $('.header__logo img').css('width','70px');
         $('.header__logo img').attr('src','assets/images/logo-blanco.png');
@@ -27,6 +27,12 @@ $( _ => {
         $('#menu-collapse').toggleClass("active");
     });
 
+//Animate
+    $('.header__menu a').on('click', function(e) {
+        e.preventDefault();
+        $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top -70}, 800, 'linear');
+    });
+
 //Evento: Acordeon
     $(".accordion__title").click(function(e){
         e.preventDefault();
@@ -39,6 +45,5 @@ $( _ => {
             content.slideUp(250);
         }
     });
-
-
+    Contact();
 });

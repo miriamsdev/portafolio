@@ -1,7 +1,7 @@
 @import "variables";
 @import 'reset';
 @import "grid";
-@import "skill";
+@import "directives";
 
 //Header
 .header {
@@ -19,7 +19,7 @@
     li {
       display: inline-block;
       padding: 7px 0;
-      margin-left:9%;
+      margin-left:8%;
     }
     a{
       color: #fff;
@@ -66,8 +66,9 @@
 .aboutme {
   @extend %container;
   &__header {
-    margin: 1.8rem 0;
+    margin: 1.5rem 0 3rem 0;
     text-align: center;
+    letter-spacing: 5px;
   }
   &__image {
     @extend %flex;
@@ -92,6 +93,7 @@
         font-size: 14px;
         border: 1px solid #fff;
         transition: 0.4s;
+        border-radius: 5px;
         &.open {
           background: $primary-color;
         }
@@ -115,6 +117,7 @@
         border: 1px solid $primary-color;
         overflow: auto;
         transition: max-height 0.2s ease-out;
+        border-radius: 5px;
       }
     }
   }
@@ -123,48 +126,43 @@
 //Skills
 .skills {
   @extend %container;
-  background: $second-color;
-  overflow: auto;
+  margin-bottom: 5%;
   &__row {
     .box{
-      width: 280px;
-      height: 350px;
+      height: 400px;
       border-radius: 20px;
-      //box-shadow: 8px 10px 14px -8px #cecece;
       text-align: center;
-      background-color: #f4f1f1;
       padding: 30px 14px 0 14px;
-      margin: 14px 28px;
+      @include support(box-shadow, 8px 10px 14px -8px $second-color, moz webkit ms o);
       h5 {
         margin-bottom: 30px;
       }
-      ul{
+      div{
         @extend %flex;
         flex-wrap: wrap;
-        li{
-          width: 50%;
-          text-align: left;
-          font-weight: 400;
+        margin: 5px;
+        div span{
+          font-size: 14px;
         }
       }
     }
   }
   .size-icon{
     font-size: 50px;
+    color: $second-color;
   }
 }
 
 //Portafolio
 .portfolio {
   @extend %container;
-  @extend %flex;
-  flex-flow: wrap;
-  align-items: flex-start;
   &__item {
     margin-bottom: 70px;
-    a {
-      @extend %btn-second;
-      color: $text-color;
+    .links{
+      a {
+        @extend %btn-second;
+        color: $text-color;
+      }
     }
   }
   .owl-carousel.owl-loaded {
@@ -172,45 +170,104 @@
   }
   .owl-carousel .owl-item img {
     display: block;
-    width: 250px;
     height:400px;
     margin: 0 auto;
   }
-  .owl-theme .owl-nav {
-    margin: 0;
+  .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: $second-color;
   }
   .owl-theme .owl-nav [class*=owl-] {
     position: absolute;
     top:50%;
-    color: #fff;
+    color: $second-color;
     padding: 4px 10px;
-    background: $primary-color;
-    cursor: pointer;
+    background: none;
+    font-size: 2rem;
   }
   .owl-prev {
-    left: -14px;
+    left: -24px;
   }
   .owl-next {
-    right: -14px;
+    right: -24px;
   }
-
 }
 
 .contact{
   @extend %container;
+  padding-bottom: 4%;
   background: url(../images/p6.png);
   background-repeat: repeat;
-  height: 400px;
   overflow: auto;
-  clear: both;
+  //clear: both;
   i {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    padding: 10px;
     color: $second-color;
+    &:hover {
+      color: $primary-color;
+    }
   }
   .btn {
     @extend %btn-second;
   }
+  &__form {
+    margin: auto;
+    .input-box{
+      position: relative;
+      margin-bottom: 32px;
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        font-size: 16px;
+        color: $second-color;
+        outline: none;
+        padding: 15px;
+        background: none;
+        border: none;
+        border-bottom: $border solid $light-primary;
+      }
+      &:focus,
+      &:active{
+        outline: none;
+        border-bottom: $border solid $second-color;
+      }
+      &.error{
+        border-bottom: $border solid $error;
+        + label{
+          color: $error;
+        }
+      }
+      label{
+        color: $second-color;
+        &.label{
+          @include support(transition, all .3s ease, moz webkit ms o);
+          margin-left: 15px;
+          font-size: 16px;
+          line-height: 16px;
+          position: absolute;
+          top: 16px;
+          left: 0;
+          &.active{
+            top: -12px;
+            font-size: 12px;
+            line-height: 12px;
+            color: $divider;
+          }
+        }
+      }
+    }
+    input[type="submit"]{
+      @extend %btn-second;
+      font-family: $font-family;
+      font-size: 1rem;
+      line-height: 1.1rem;
+      border: none;
+      cursor: pointer;
+    }
+  }
 }
+
 
 footer{
   @extend %flex;
@@ -220,7 +277,9 @@ footer{
     color: #fff;
   }
 }
-
+section {
+  padding: 5% 0;
+}
 @media screen and (max-width: 768px){
   .hide-xs {
     display: none;
@@ -250,7 +309,7 @@ footer{
   }
   .home {
     h1 {
-      font-size: $text-size - 2rem;
+      font-size: $text-size - 2.1rem;
       margin-bottom: 30px;
     }
     h2 {
@@ -261,3 +320,5 @@ footer{
     background: #fff;
   }
 }
+
+
