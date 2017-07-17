@@ -2,7 +2,7 @@ const Contact = () => {
     const elementos = $('.input-box input, .input-box textarea');
 
     const validarInputs = () =>{
-            if ($('#name').val() == "" || $('#email').val() == "" || $('#message').val() == ""){
+            if ($('#name').val() === "" || $('#email').val() === "" || $('#message').val() === ""){
                 console.log('El campo ' + elementos.attr('name') + ' esta incompleto');
                 elementos.addClass("error");
                 return false;
@@ -27,19 +27,23 @@ const Contact = () => {
     });
 
     $('#name').on("blur",() => {
-        if($('#name').val() == "" ){
+        if($('#name').val() === "" ){
             $('#name').next().removeClass("active");
             $('#name').addClass("error");
         }
     });
+    const regexEmail = /([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})/;
+
     $('#email').on("blur",() => {
-        if($('#email').val() == "" ){
+        if($('#email').val() === ""){
             $('#email').next().removeClass("active");
+            $('#email').addClass("error");
+        }else if(!regexEmail.test($('#email').val())){
             $('#email').addClass("error");
         }
     });
     $('#message').on("blur",() => {
-        if($('#message').val() == "" ){
+        if($('#message').val() === "" ){
             $('#message').next().removeClass("active");
             $('#message').addClass("error");
         }
@@ -58,13 +62,13 @@ const Contact = () => {
             e.preventDefault();
             return false;
         } else {
-            $.ajax({
-                method: "POST",
-                url: "https://formspree.io/dtdisendes012@gmail.com",
-                data: $('#contact-form').serialize(),
-                data:dataForm,
-                dataType: "json"
-            });
+            // $.ajax({
+            //     method: "POST",
+            //     url: "https://formspree.io/dtdisendes012@gmail.com",
+            //     data: $('#contact-form').serialize(),
+            //     data:dataForm,
+            //     dataType: "json"
+            // });
             alert("Su mensaje fue enviado satisfactoriamente\nGracias!");
             console.log('Envia');
             $('#form-contact')[0].reset();

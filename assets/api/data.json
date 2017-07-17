@@ -21,7 +21,7 @@
     "img":"gasfinder.png",
     "linkCode" : "https://github.com/miriampc/gasfinder",
     "linkPage" : "https://miriampc.github.io/gasfinder/",
-    "utils" : ["HTML","CSS","JavaScript ES6","API GMAPS","JQuery","AJAX","Componentes (React Style)"]
+    "utils" : ["HTML","CSS","JavaScript ES6","API GMaps","JQuery","Ajax","Componentes (React Style)"]
 },{
     "title" : "LABCAR",
     "type":"Proyecto final Sprint 4 - Mobile y Desktop",

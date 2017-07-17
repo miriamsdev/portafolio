@@ -12,7 +12,13 @@
   .bg-b3 span {
     text-align: justify; }
 
-.header, .aboutme, .skills, .portfolio, .contact {
+.bg-primary-color {
+  background: rgba(62, 214, 187, 0.9); }
+
+.bg-second-color {
+  background: rgba(62, 70, 101, 0.78); }
+
+.aboutme, .skills, .portfolio, .contact {
   width: 100%;
   padding: .5% 10%;
   overflow: auto; }
@@ -22,21 +28,21 @@
   justify-content: center;
   align-items: center; }
 
-.portfolio__item .links a, .contact .btn, .contact__form button {
+.portfolio__item .links a, .contact__links .btn-cv .btn, .contact__form button {
   padding: 10px 20px;
   background: #01d1b2;
   color: #ffffff;
   border-radius: 5px;
   font-weight: lighter; }
-  .portfolio__item .links a i, .contact .btn i, .contact__form button i {
+  .portfolio__item .links a i, .contact__links .btn-cv .btn i, .contact__form button i {
     font-size: 1.2rem;
     margin-right: 10px;
     color: #fff; }
 
-.portfolio__item .links a:hover, .contact .btn:hover, .contact__form button:hover {
+.portfolio__item .links a:hover, .contact__links .btn-cv .btn:hover, .contact__form button:hover {
   background: #2c3e50;
   color: #01d1b2; }
-  .portfolio__item .links a:hover i, .contact .btn:hover i, .contact__form button:hover i {
+  .portfolio__item .links a:hover i, .contact__links .btn-cv .btn:hover i, .contact__form button:hover i {
     margin-right: 14px; }
 
 .hide-md {
@@ -464,19 +470,22 @@ img {
   top: 0;
   left: 0;
   z-index: 5;
-  background: rgba(62, 70, 101, 0.78); }
+  background: rgba(62, 70, 101, 0.78);
+  width: 100%; }
   .header__logo img {
     width: 70px; }
-  .header__menu li {
-    display: inline-block;
-    padding: 7px 0;
-    margin-left: 8%; }
-  .header__menu a {
-    color: #fff;
-    font-weight: 400;
-    font-size: 1.1rem; }
-  .header__menu li:hover {
-    border-bottom: 4px solid #01d1b2; }
+  .header__menu {
+    padding: 1% 5%; }
+    .header__menu li {
+      display: inline-block;
+      padding: 7px 0;
+      margin-left: 8%; }
+    .header__menu a {
+      color: #fff;
+      font-weight: 400;
+      font-size: 1.1rem; }
+    .header__menu li:hover {
+      border-bottom: 4px solid #01d1b2; }
 
 .home {
   background-attachment: fixed;
@@ -600,10 +609,21 @@ img {
   overflow: auto; }
   .contact i {
     font-size: 2.5rem;
-    padding: 10px;
+    padding: 5px;
     color: #2c3e50; }
     .contact i:hover {
       color: #01d1b2; }
+  .contact__links a {
+    display: block; }
+    .contact__links a i {
+      text-align: center;
+      width: 4rem; }
+  .contact__links .btn-cv {
+    margin-top: 14px; }
+    .contact__links .btn-cv .btn {
+      width: 180px; }
+      .contact__links .btn-cv .btn i {
+        width: auto; }
   .contact__form {
     margin: auto; }
     .contact__form .input-box {
@@ -666,6 +686,10 @@ section {
   padding: 5% 0; }
 
 @media screen and (max-width: 768px) {
+  .col {
+    padding: 0 1rem;
+    min-height: 1px; }
+
   .hide-xs {
     display: none; }
 
@@ -673,26 +697,55 @@ section {
     display: block; }
 
   .header__logo img {
-    width: 50px; }
-  .header__menu-mobile span {
-    padding: 14px 0;
-    color: #ffffff;
-    font-size: 2rem; }
-  .header__menu-mobile ul {
-    text-align: center; }
-    .header__menu-mobile ul li a {
-      color: #ffffff;
-      font-weight: lighter;
-      font-size: medium; }
+    width: 60px;
+    padding: 7px 0; }
+  .header__menu-mobile {
+    background: rgba(62, 70, 101, 0.9); }
+    .header__menu-mobile .nav-bar {
+      overflow: auto; }
+      .header__menu-mobile .nav-bar span {
+        padding: 14px 0;
+        color: #ffffff;
+        font-size: 2rem; }
+    .header__menu-mobile .menu-collapse {
+      padding: 0 5%;
+      text-align: center;
+      height: 100vh;
+      margin-top: 28px; }
+      .header__menu-mobile .menu-collapse ul > li {
+        padding: 20px;
+        border-bottom: 1px solid #2c3e50; }
+        .header__menu-mobile .menu-collapse ul > li a {
+          color: #ffffff;
+          font-weight: lighter;
+          font-size: 1.8rem; }
+      .header__menu-mobile .menu-collapse a {
+        display: block;
+        color: #ffffff;
+        font-size: 1.2rem;
+        font-family: 'Roboto';
+        font-weight: lighter;
+        text-align: left; }
+        .header__menu-mobile .menu-collapse a i {
+          width: 3rem;
+          font-size: 1.5rem;
+          text-align: center; }
 
   .home h1 {
-    font-size: 4.9rem;
+    font-size: 4.2rem;
     margin-bottom: 30px; }
   .home h2 {
     font-size: 2.2rem; }
 
   .bg-code {
     background: #fff; }
+
+  .aboutme__content img {
+    width: 70px;
+    float: left; }
+  .aboutme__content .accordion__content {
+    display: none;
+    padding: 7px; }
 
   .skills__row .box {
     height: auto; }

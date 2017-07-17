@@ -30,18 +30,29 @@
             </ul>
         </nav>
         <nav class="header__menu-mobile active hide-md">
-            <div class="header__logo col xs-10">
-                <a href="#home"><img src="assets/images/logo-miriam.png" alt="mi logo"></a>
+            <div class="nav-bar">
+                <div class="header__logo col xs-10">
+                    <a href="#home"><img src="assets/images/logo-miriam.png" alt="mi logo"></a>
+                </div>
+                <div class="col xs-2">
+                    <span id="icon-menu" class="fa fa-bars" aria-hidden="true"></span>
+                </div>
             </div>
-            <div class="col xs-1">
-                <span id="icon-menu" class="fa fa-bars" aria-hidden="true"></span>
+            <div id="menu-collapse" class="menu-collapse hide-xs">
+                <ul>
+                    <li><a href="#aboutme">ACERCA DE MI</a></li>
+                    <li><a href="#skills">SKILLS</a></li>
+                    <li><a href="#portfolio">PORTAFOLIO</a></li>
+                    <li><a href="#contact">CONTACTO</a></li>
+                </ul>
+                <a href="tel:+51"><i class="fa fa-mobile"></i>(+51) 983741185</a>
+                <a href="mailto:miiriampc@gmail.com?Subject=Message%20Received" target="_top"><i class="fa fa-envelope"></i> miiriampc@gmail.com</a>
+                <a href="https://github.com/miriampc/" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i> Git Hub</a>
+                <a href="https://www.linkedin.com/in/miriam-peralta-castañeda/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i> Linkedin</a>
+                <a class="btn" href="assets/resources/CV-Miriam.pdf" target="_blank">
+                    <i class="fa fa-address-card" aria-hidden="true"></i> Mira mi CV
+                </a>
             </div>
-            <ul id="menu-collapse" class="hide-xs">
-                <li><a href="#aboutme">ACERCA DE MI</a></li>
-                <li><a href="#skills">SKILLS</a></li>
-                <li><a href="#portfolio">PORTAFOLIO</a></li>
-                <li><a href="#contact">CONTACTO</a></li>
-            </ul>
         </nav>
     </header>
     <section id="home" class="home">
@@ -56,7 +67,7 @@
             <div class="aboutme__header col xs-12 md-12">
                 <h3>ACERCA DE MI</h3>
             </div>
-            <div class="aboutme__image col md-6">
+            <div class="aboutme__image col xs-12 md-6">
                 <img src="assets/images/me.jpg" alt="miriam peralta castañeda">
             </div>
             <div class="aboutme__content col md-6">
@@ -70,22 +81,22 @@
                 <div class="accordion">
                     <div class="accordion__title"><strong>Una de las 5 mejores</strong></div>
                     <div class="accordion__content">
-                        <div class="col xs-3"><img src="assets/images/top_5.png" alt="pin top 5"></div>
-                        <p class="col xs-9 md-9">Son las 5 alumnas que obtienen los mayores puntajes, tanto en nivel técnico como en actitud profesional</p>
+                        <div class="col xs-4 md-3"><img src="assets/images/top_5.png" alt="pin top 5"></div>
+                        <p class="col xs-8 md-9">Son las 5 alumnas que obtienen los mayores puntajes, tanto en nivel técnico como en actitud profesional</p>
                     </div>
                 </div>
                 <div class="accordion">
                     <div class="accordion__title"><strong>Mejor squad</strong></div>
                     <div class="accordion__content">
-                        <div class="col xs-3"><img src="assets/images/best_squad.png" alt="pin best squad"></div>
-                        <p class="col xs-9">Es el squad que acumula más puntos y que cumplió el objetivo</p>
+                        <div class="col xs-4 md-3"><img src="assets/images/best_squad.png" alt="pin best squad"></div>
+                        <p class="col xs-8 md-9">Es el squad que acumula más puntos y que cumplió el objetivo</p>
                     </div>
                 </div>
                 <div class="accordion">
                     <div class="accordion__title"><strong>Best team player</strong></div>
                     <div class="accordion__content">
-                        <div class="col xs-3"><img src="assets/images/team-player.png" alt="pin best team player"></div>
-                        <p class="col xs-9">Es la alumna que obtiene el mayor puntaje en trabajo en equipo</p>
+                        <div class="col xs-4 md-3"><img src="assets/images/team-player.png" alt="pin best team player"></div>
+                        <p class="col xs-8 md-9">Es la alumna que obtiene el mayor puntaje en trabajo en equipo</p>
                     </div>
                 </div>
             </div>
@@ -121,16 +132,13 @@
             </div>
             <button id="btn-submit" type="submit">Enviar</button>
         </form>
-        <div class="col md-6">
-            <div class="">
-                <p><i class="fa fa-envelope" aria-hidden="true"></i> miiriampc@gmail.com</p>
-                <p><i class="fa fa-mobile" aria-hidden="true"></i> 983741185</p>
-            </div>
-            <div class="">
-                <a href="https://github.com/miriampc/" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a>
-                <a href="https://www.linkedin.com/in/miriam-peralta-castañeda/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-            </div>
-            <div class="">
+        <div class="contact__links col md-6">
+            <a href="tel:+51"><i class="fa fa-mobile"></i>(+51) 983741185</a>
+            <a href="mailto:miiriampc@gmail.com?Subject=Message%20Received" target="_top"><i class="fa fa-envelope"></i>miiriampc@gmail.com</a>
+            <a href="https://github.com/miriampc/" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i>Git Hub</a>
+            <a href="https://www.linkedin.com/in/miriam-peralta-castañeda/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i>Linkedin</a>
+
+            <div class="btn-cv">
                 <a class="btn" href="assets/resources/CV-Miriam.pdf" target="_blank">
                     <i class="fa fa-address-card" aria-hidden="true"></i>Mira mi CV
                 </a>

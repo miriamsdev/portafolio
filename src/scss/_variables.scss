@@ -27,7 +27,15 @@ $font-family: 'Roboto Mono', Arial;
   span {text-align: justify;}
   color: $text-color;
 }
+.bg-primary-color {
+  background: rgba(62, 214, 187,0.9);
+}
 
+.bg-second-color {
+  background: rgba(62, 70, 101, 0.78);
+}
+
+//Placeholders
 %container {
   width: 100%;
   padding: .5% 10%;

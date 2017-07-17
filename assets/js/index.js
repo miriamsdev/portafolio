@@ -4,7 +4,6 @@ $(window).scroll(() => {
     if (scrollTop > 500) {
         $('.header').css('background', 'rgba(62, 214, 187,0.9)');
         $('.header__menu a').css('color', '#fff');
-        $('.header__logo img').css('width','70px');
         $('.header__logo img').attr('src','assets/images/logo-blanco.png');
     } else {
         $('.header__logo img').attr('src','assets/images/logo-miriam.png');
@@ -22,8 +21,10 @@ $( _ => {
 //Event: hamburguer menu
     $('#icon-menu').on('click', ()=>{
         $('#menu-collapse').toggleClass("active");
+        $('#icon-menu').toggleClass("fa fa-bars");
+        $('#icon-menu').toggleClass("fa fa-times")
     });
-    $('#menu-collapse li').on('click', ()=>{
+    $('#menu-collapse ul li').on('click', ()=>{
         $('#menu-collapse').toggleClass("active");
     });
 

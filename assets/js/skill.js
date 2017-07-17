@@ -38,7 +38,7 @@ const dataSkill=[
     }];
 
 
-$(_=>{
+$( _ =>{
     dataSkill.forEach(element =>{
         const col=$('<div class="col xs-12 md-4"></div>');
         const skillBox=$(`<div class="box ${element.bgcolor}"></div>`);

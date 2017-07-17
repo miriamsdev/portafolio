@@ -5,17 +5,18 @@
 
 //Header
 .header {
-  @extend %container;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 5;
   background: rgba(62, 70, 101, 0.78);
+  width: 100%;
   &__logo img{
     width: 70px;
   }
   &__menu {
     @extend %flex;
+    padding: 1% 5%;
     li {
       display: inline-block;
       padding: 7px 0;
@@ -199,17 +200,32 @@
     background: url(../images/p6.png);
     background-repeat: repeat;
     overflow: auto;
-    //clear: both;
     i {
       font-size: 2.5rem;
-      padding: 10px;
+      padding: 5px;
       color: $second-color;
       &:hover {
         color: $primary-color;
       }
     }
-    .btn {
-      @extend %btn-second;
+    &__links{
+      a{
+        display: block;
+        i {
+          text-align: center;
+          width: 4rem;
+        }
+      }
+      .btn-cv{
+        margin-top: 14px;
+        .btn {
+          @extend %btn-second;
+          width: 180px;
+          i {
+            width: auto;
+          }
+        }
+      }
     }
     &__form {
       margin: auto;
@@ -281,6 +297,10 @@ section {
   padding: 5% 0;
 }
 @media screen and (max-width: 768px){
+  .col {
+    padding: 0 1rem;
+    min-height: 1px;
+  }
   .hide-xs {
     display: none;
   }
@@ -288,38 +308,78 @@ section {
     display: block;
   }
   .header {
+
     &__logo img{
-      width: 50px;
+      width: 60px;
+      padding: 7px 0;
     }
     &__menu-mobile {
-      span{
-        padding: 14px 0;
-        color: $text-color;
-        font-size: $text-size - 5rem;
-      }
-      ul {
-        text-align: center;
-        li a{
+      background: rgba(62, 70, 101, 0.9);
+      .nav-bar{
+        overflow: auto;
+        span{
+          padding: 14px 0;
           color: $text-color;
+          font-size: $text-size - 5rem;
+        }
+      }
+      .menu-collapse {
+        padding: 0 5%;
+        text-align: center;
+        height: 100vh;
+        margin-top: 28px;
+        ul>li {
+          padding: 20px;
+          border-bottom: 1px solid #2c3e50;
+          a{
+            color: $text-color;
+            font-weight: lighter;
+            font-size: 1.8rem;
+          }
+        }
+        a{
+          display: block;
+          color: $text-color;
+          font-size: 1.2rem;
+          font-family: 'Roboto';
           font-weight: lighter;
-          font-size: medium;
+          text-align: left;
+          i {
+            width: 3rem;
+            font-size: 1.5rem;
+            text-align: center;
+          }
         }
       }
     }
   }
   .home {
     h1 {
-      font-size: $text-size - 2.1rem;
+      font-size: $text-size - 2.8rem;
       margin-bottom: 30px;
     }
     h2 {
       font-size: $text-size - 4.8rem;
     }
   }
+
   .bg-code {
     background: #fff;
   }
-
+  .aboutme{
+    &__content {
+      img {
+        width: 70px;
+        float: left;
+      }
+      .accordion {
+        &__content {
+          display: none;
+          padding: 7px;
+        }
+      }
+    }
+  }
   .skills {
     &__row .box{
         height: auto;
