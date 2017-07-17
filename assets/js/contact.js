@@ -1,57 +1,72 @@
 const Contact = () => {
-    const elementos=$('.input-box');
-    console.log(elementos);
-
-    // Funcion que se ejecuta cuando el evento click es activado
+    const elementos = $('.input-box input, .input-box textarea');
 
     const validarInputs = () =>{
-        for (let i = 0; i < elementos.length; i++) {
-            // Identificamos si el elemento es de tipo texto, email, password, radio o checkbox
-            if (elementos[i].type == "text" || elementos[i].type == "email") {
-                // Si es tipo texto, email o password vamos a comprobar que esten completados los input
-                if (elementos[i].val().length == 0) {
-                    console.log('El campo ' + elementos[i].name + ' esta incompleto');
-                    elementos[i].className = elementos[i].className + " error";
-                    return false;
-                } else {
-                    elementos[i].className = elementos[i].className.replace(" error", "");
-                }
+            if ($('#name').val() == "" || $('#email').val() == "" || $('#message').val() == ""){
+                console.log('El campo ' + elementos.attr('name') + ' esta incompleto');
+                elementos.addClass("error");
+                return false;
+            }else {
+                elementos.removeClass("error");
+                return true;
             }
-        }
-
-        return true;
     };
-    //
-    const enviar = (e) => {
+    // --- Eventos ---
+
+    $('#name').on("focus",() => {
+        $('#name').next().addClass("active");
+        $('#name').removeClass("error");
+    });
+    $('#email').on("focus",() => {
+        $('#email').next().addClass("active");
+        $('#email').removeClass("error");
+    });
+    $('#message').on("focus",() => {
+        $('#message').next().addClass("active");
+        $('#message').removeClass("error");
+    });
+
+    $('#name').on("blur",() => {
+        if($('#name').val() == "" ){
+            $('#name').next().removeClass("active");
+            $('#name').addClass("error");
+        }
+    });
+    $('#email').on("blur",() => {
+        if($('#email').val() == "" ){
+            $('#email').next().removeClass("active");
+            $('#email').addClass("error");
+        }
+    });
+    $('#message').on("blur",() => {
+        if($('#message').val() == "" ){
+            $('#message').next().removeClass("active");
+            $('#message').addClass("error");
+        }
+    });
+
+
+    $('#form-contact').on("submit", (e) => {
+        e.preventDefault();
+        const dataForm = {
+            name: $('#name').val(),
+            email: $('#email').val(),
+            message:$('#message').val()
+        }
         if (!validarInputs()) {
             console.log('Falto validar los Input');
             e.preventDefault();
+            return false;
         } else {
+            $.ajax({
+                method: "POST",
+                url: "https://formspree.io/dtdisendes012@gmail.com",
+                data: $('#contact-form').serialize(),
+                data:dataForm,
+                dataType: "json"
+            });
+            alert("Su mensaje fue enviado satisfactoriamente\nGracias!");
             console.log('Envia');
-            e.preventDefault();
         }
-    };
-    //
-    // const focusInput = function() {
-    //     this.parentElement.children[1].className = "label active";
-    //     this.parentElement.children[0].className = this.parentElement.children[0].className.replace("error", "");
-    // };
-    //
-    // const blurInput = function() {
-    //     if (this.value <= 0) {
-    //         this.parentElement.children[1].className = "label";
-    //         this.parentElement.children[0].className = this.parentElement.children[0].className + " error";
-    //     }
-    // };
-    //
-    // // --- Eventos ---
-    $('#form-contact').on("submit", enviar);
-
-    for (let i = 0; i < elementos.length; i++) {
-        if (elementos[i].type == "text" || elementos[i].type == "email") {
-            elementos[i].on("focus", focusInput);
-            elementos[i].on("blur", blurInput);
-        }
-    }
-
-}
+    });
+};

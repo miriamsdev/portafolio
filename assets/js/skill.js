@@ -40,7 +40,7 @@ const dataSkill=[
 
 $(_=>{
     dataSkill.forEach(element =>{
-        const col=$('<div class="col md-4"></div>');
+        const col=$('<div class="col xs-12 md-4"></div>');
         const skillBox=$(`<div class="box ${element.bgcolor}"></div>`);
         const span=$(`<span class="${element.icon} size-icon"></span>`);
         const h4=$(`<h4>${element.tittle}</h4>`);

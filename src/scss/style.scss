@@ -129,10 +129,11 @@
   margin-bottom: 5%;
   &__row {
     .box{
-      height: 400px;
+      height: 410px;
       border-radius: 20px;
       text-align: center;
       padding: 30px 14px 0 14px;
+      margin-bottom: 20px;
       @include support(box-shadow, 8px 10px 14px -8px $second-color, moz webkit ms o);
       h5 {
         margin-bottom: 30px;
@@ -193,71 +194,70 @@
 }
 
 .contact{
-  @extend %container;
-  padding-bottom: 4%;
-  background: url(../images/p6.png);
-  background-repeat: repeat;
-  overflow: auto;
-  //clear: both;
-  i {
-    font-size: 2.5rem;
-    padding: 10px;
-    color: $second-color;
-    &:hover {
-      color: $primary-color;
+    @extend %container;
+    padding-bottom: 4%;
+    background: url(../images/p6.png);
+    background-repeat: repeat;
+    overflow: auto;
+    //clear: both;
+    i {
+      font-size: 2.5rem;
+      padding: 10px;
+      color: $second-color;
+      &:hover {
+        color: $primary-color;
+      }
     }
-  }
-  .btn {
-    @extend %btn-second;
-  }
-  &__form {
-    margin: auto;
-    .input-box{
-      position: relative;
-      margin-bottom: 32px;
-      input[type="text"],
-      input[type="email"],
-      textarea {
-        width: 100%;
-        font-size: 16px;
-        color: $second-color;
-        outline: none;
-        padding: 15px;
-        background: none;
-        border: none;
-        border-bottom: $border solid $light-primary;
-      }
-      &:focus,
-      &:active{
-        outline: none;
-        border-bottom: $border solid $second-color;
-      }
-      &.error{
-        border-bottom: $border solid $error;
-        + label{
-          color: $error;
-        }
-      }
-      label{
-        color: $second-color;
-        &.label{
-          @include support(transition, all .3s ease, moz webkit ms o);
-          margin-left: 15px;
+    .btn {
+      @extend %btn-second;
+    }
+    &__form {
+      margin: auto;
+      .input-box{
+        position: relative;
+        margin-bottom: 32px;
+        input[type="text"],
+        input[type="email"],
+        textarea {
+          width: 100%;
           font-size: 16px;
-          line-height: 16px;
-          position: absolute;
-          top: 16px;
-          left: 0;
-          &.active{
-            top: -12px;
-            font-size: 12px;
-            line-height: 12px;
-            color: $divider;
+          color: $second-color;
+          outline: none;
+          padding: 15px;
+          background: none;
+          border: none;
+          border-bottom: $border solid $light-primary;
+          &:focus,
+          &:active{
+            outline: none;
+            border-bottom: $border solid $second-color;
+          }
+          &.error{
+            border-bottom: $border solid $error;
+            + label{
+              color: $error;
+            }
+          }
+        }
+        label{
+          color: $second-color;
+          &.label{
+            margin-left: 15px;
+            font-size: 16px;
+            line-height: 16px;
+            position: absolute;
+            top: 16px;
+            left: 0;
+            &.active{
+              top: -12px;
+              font-size: 12px;
+              line-height: 12px;
+              color: $divider;
+            }
           }
         }
       }
-    }
-    input[type="submit"]{
+    button{
       @extend %btn-second;
       font-family: $font-family;
       font-size: 1rem;
@@ -318,6 +318,24 @@ section {
   }
   .bg-code {
     background: #fff;
+  }
+
+  .skills {
+    &__row .box{
+        height: auto;
+    }
+  }
+
+  .portfolio {
+    &__item .links {
+      a {
+        display: block;
+      }
+    }
+    .owl-carousel .owl-item img {
+      height: auto;
+      margin-bottom: 14px;
+    }
   }
 }
 

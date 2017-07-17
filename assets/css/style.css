@@ -22,21 +22,21 @@
   justify-content: center;
   align-items: center; }
 
-.portfolio__item .links a, .contact .btn, .contact__form input[type="submit"] {
+.portfolio__item .links a, .contact .btn, .contact__form button {
   padding: 10px 20px;
   background: #01d1b2;
   color: #ffffff;
   border-radius: 5px;
   font-weight: lighter; }
-  .portfolio__item .links a i, .contact .btn i, .contact__form input[type="submit"] i {
+  .portfolio__item .links a i, .contact .btn i, .contact__form button i {
     font-size: 1.2rem;
     margin-right: 10px;
     color: #fff; }
 
-.portfolio__item .links a:hover, .contact .btn:hover, .contact__form input[type="submit"]:hover {
+.portfolio__item .links a:hover, .contact .btn:hover, .contact__form button:hover {
   background: #2c3e50;
   color: #01d1b2; }
-  .portfolio__item .links a:hover i, .contact .btn:hover i, .contact__form input[type="submit"]:hover i {
+  .portfolio__item .links a:hover i, .contact .btn:hover i, .contact__form button:hover i {
     margin-right: 14px; }
 
 .hide-md {
@@ -548,10 +548,11 @@ img {
 .skills {
   margin-bottom: 5%; }
   .skills__row .box {
-    height: 400px;
+    height: 410px;
     border-radius: 20px;
     text-align: center;
     padding: 30px 14px 0 14px;
+    margin-bottom: 20px;
     -moz-box-shadow: 8px 10px 14px -8px #2c3e50;
     -webkit-box-shadow: 8px 10px 14px -8px #2c3e50;
     -ms-box-shadow: 8px 10px 14px -8px #2c3e50;
@@ -619,21 +620,24 @@ img {
         background: none;
         border: none;
         border-bottom: 2px solid #BBDEFB; }
-      .contact__form .input-box:focus, .contact__form .input-box:active {
-        outline: none;
-        border-bottom: 2px solid #2c3e50; }
-      .contact__form .input-box.error {
-        border-bottom: 2px solid #f44862; }
-        .contact__form .input-box.error + label {
-          color: #f44862; }
+        .contact__form .input-box input[type="text"]:focus, .contact__form .input-box input[type="text"]:active,
+        .contact__form .input-box input[type="email"]:focus,
+        .contact__form .input-box input[type="email"]:active,
+        .contact__form .input-box textarea:focus,
+        .contact__form .input-box textarea:active {
+          outline: none;
+          border-bottom: 2px solid #2c3e50; }
+        .contact__form .input-box input[type="text"].error,
+        .contact__form .input-box input[type="email"].error,
+        .contact__form .input-box textarea.error {
+          border-bottom: 2px solid #f44862; }
+          .contact__form .input-box input[type="text"].error + label,
+          .contact__form .input-box input[type="email"].error + label,
+          .contact__form .input-box textarea.error + label {
+            color: #f44862; }
       .contact__form .input-box label {
         color: #2c3e50; }
         .contact__form .input-box label.label {
-          -moz-transition: all 0.3s ease;
-          -webkit-transition: all 0.3s ease;
-          -ms-transition: all 0.3s ease;
-          -o-transition: all 0.3s ease;
-          transition: all 0.3s ease;
           margin-left: 15px;
           font-size: 16px;
           line-height: 16px;
@@ -645,7 +649,7 @@ img {
             font-size: 12px;
             line-height: 12px;
             color: #B6B6B6; }
-    .contact__form input[type="submit"] {
+    .contact__form button {
       font-family: "Roboto Mono", Arial;
       font-size: 1rem;
       line-height: 1.1rem;
@@ -688,6 +692,15 @@ section {
     font-size: 2.2rem; }
 
   .bg-code {
-    background: #fff; } }
+    background: #fff; }
+
+  .skills__row .box {
+    height: auto; }
+
+  .portfolio__item .links a {
+    display: block; }
+  .portfolio .owl-carousel .owl-item img {
+    height: auto;
+    margin-bottom: 14px; } }
 
 /*# sourceMappingURL=style.css.map */
