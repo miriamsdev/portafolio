@@ -67,6 +67,7 @@ const Contact = () => {
             });
             alert("Su mensaje fue enviado satisfactoriamente\nGracias!");
             console.log('Envia');
+            $('#form-contact')[0].reset();
         }
     });
 };
