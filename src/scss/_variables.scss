@@ -3,7 +3,7 @@ $primary-color: #01d1b2;//bulma
 $second-color:#2c3e50;
 $third-color:#cfcfce;
 $text-color:#ffffff;
-$text-size:7rem;
+$text-size:5rem;
 
 $light-primary: #BBDEFB;
 $divider: #B6B6B6;
@@ -20,9 +20,6 @@ $font-family: 'Roboto Mono', Arial;
 }
 .bg-b3 {
   background: rgba(44, 62, 80,0.78);
-  h4,span{
-    color: $text-color;
-  }
   span {text-align: justify;}
   color: $text-color;
 }
@@ -79,10 +76,10 @@ $font-family: 'Roboto Mono', Arial;
   margin-bottom:10px;
 }
 
-h1{@include property('Rancho',normal,$text-size,$text-size/2,$text-color);}
-h2{@include property('Metrophobic',500,$text-size/2,2rem,$text-color);}
+h1{@include property('Metrophobic',600,$text-size,$text-size/2,$text-color);}
+h2{@include property('Metrophobic',500,$text-size - 1.5rem,2rem,$primary-color);}
 h3{@include property('Metrophobic',500,2.7rem,3rem,#424242);}
-h4{@include property('Metrophobic',500,1.5rem,1.4rem,#424242);}
+h4{@include property('Metrophobic',500,1.5rem,1.4rem,$text-color);}
 p{@include property('Roboto',normal,1rem,1.5rem,#414549);}
 span{@include property('Roboto',normal,1rem,1.1rem,#5f6368);}
 a{@include property('Roboto Mono',lighten,1rem,1.1rem,#212121);}

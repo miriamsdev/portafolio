@@ -5,11 +5,8 @@
 
 //Header
 .header {
-  position: fixed;
-  top: 0;
-  left: 0;
   z-index: 5;
-  background: rgba(62, 70, 101, 0.78);
+  background: rgba(62, 70, 101, 0.96);
   width: 100%;
   &__logo img{
     width: 70px;
@@ -36,7 +33,7 @@
 //Home
 .home {
   background-attachment: fixed;
-  background-image: url("../images/home.jpg");
+  background-image: url("../images/home.png");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -44,12 +41,16 @@
 
   @extend %flex;
   flex-flow: column wrap;
+  justify-content: flex-start;
   &__text {
     text-align: center;
     overflow: auto;
-    padding-top: 60px;
+    img {
+      width: 170px;
+      padding: 0 0 77px 0;
+    }
     h1 {
-      text-shadow: 5px 5px 15px $primary-color;
+      letter-spacing: 2px;
       margin-bottom: 70px;
     }
     h4 {
@@ -297,9 +298,14 @@ section {
   padding: 5% 0;
 }
 @media screen and (max-width: 768px){
-  .col {
-    padding: 0 1rem;
-    min-height: 1px;
+  //.col {
+  //  padding: 0 1%;
+  //  min-height: 1px;
+  //}
+  %container {
+    width: 100%;
+    padding: .5% 5%;
+    overflow: auto;
   }
   .hide-xs {
     display: none;
@@ -308,7 +314,6 @@ section {
     display: block;
   }
   .header {
-
     &__logo img{
       width: 60px;
       padding: 7px 0;
@@ -320,7 +325,7 @@ section {
         span{
           padding: 14px 0;
           color: $text-color;
-          font-size: $text-size - 5rem;
+          font-size: $text-size - 3rem;
         }
       }
       .menu-collapse {
@@ -354,12 +359,17 @@ section {
     }
   }
   .home {
+    img {
+      width: 133px;
+      padding: 63px 0;
+    }
     h1 {
-      font-size: $text-size - 2.8rem;
+      font-size: $text-size/1.5;
+      line-height: $text-size - 1;
       margin-bottom: 30px;
     }
     h2 {
-      font-size: $text-size - 4.8rem;
+      font-size: $text-size - 2.8rem;
     }
   }
 
@@ -398,5 +408,3 @@ section {
     }
   }
 }
-
-

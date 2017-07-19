@@ -1,14 +1,11 @@
 //Function: Interaction Scroll
+const offsetTop = $('.header').offset().top;
 $(window).scroll(() => {
-    const scrollTop = $(this).scrollTop();
-    if (scrollTop > 500) {
-        $('.header').css('background', 'rgba(62, 214, 187,0.9)');
-        $('.header__menu a').css('color', '#fff');
-        $('.header__logo img').attr('src','assets/images/logo-blanco.png');
+    const scrollTop = $(window).scrollTop();
+    if (scrollTop > offsetTop){
+        $('.header').css({ 'position': 'fixed', 'top':0 }).addClass('fxd');
     } else {
-        $('.header__logo img').attr('src','assets/images/logo-miriam.png');
-        $('.header').css('background', 'rgba(62, 70, 101, 0.78)');
-        $('.header__logo img').css('width','70px');
+        $('.header').css({ 'position': 'absolute', 'top':offsetTop }).removeClass('fxd');
     }
 });
 
