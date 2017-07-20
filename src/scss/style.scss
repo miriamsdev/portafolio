@@ -71,7 +71,9 @@
   &__header {
     margin-bottom: 5%;
     text-align: center;
-    letter-spacing: 3px;
+    h3{
+      letter-spacing: 3px;
+    }
   }
   &__image {
     @extend %flex;
@@ -199,7 +201,7 @@
     overflow: auto;
     i {
       font-size: 2.5rem;
-      padding: 5px;
+      padding: 4px;
       color: $second-color;
       &:hover {
         color: $primary-color;
@@ -228,7 +230,7 @@
       margin: auto;
       .input-box{
         position: relative;
-        margin-bottom: 32px;
+        margin-bottom: 21px;
         input[type="text"],
         input[type="email"],
         textarea {
@@ -392,5 +394,8 @@ footer{
       height: auto;
       margin-bottom: 14px;
     }
+  }
+  .owl-theme .owl-nav [class*=owl-] {
+    display: none;
   }
 }

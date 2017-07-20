@@ -511,8 +511,9 @@ img {
 
 .aboutme__header {
   margin-bottom: 5%;
-  text-align: center;
-  letter-spacing: 3px; }
+  text-align: center; }
+  .aboutme__header h3 {
+    letter-spacing: 3px; }
 .aboutme__image img {
   width: 200px;
   border-radius: 50%; }
@@ -599,7 +600,7 @@ img {
   overflow: auto; }
   .contact i {
     font-size: 2.5rem;
-    padding: 5px;
+    padding: 4px;
     color: #2c3e50; }
     .contact i:hover {
       color: #01d1b2; }
@@ -618,7 +619,7 @@ img {
     margin: auto; }
     .contact__form .input-box {
       position: relative;
-      margin-bottom: 32px; }
+      margin-bottom: 21px; }
       .contact__form .input-box input[type="text"],
       .contact__form .input-box input[type="email"],
       .contact__form .input-box textarea {
@@ -744,6 +745,9 @@ footer {
     display: block; }
   .portfolio .owl-carousel .owl-item img {
     height: auto;
-    margin-bottom: 14px; } }
+    margin-bottom: 14px; }
+
+  .owl-theme .owl-nav [class*=owl-] {
+    display: none; } }
 
 /*# sourceMappingURL=style.css.map */

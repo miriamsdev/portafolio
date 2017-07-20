@@ -29,9 +29,9 @@ const dataSkill=[
     {icon:"fa fa-smile-o",
      tittle:"Soft Skills",
      subt:"Lo que puedo contribuir",
-     skill:[ {name:"Soy una persona con iniciativa en el desarrollo de productos y trabajo en equipo.", clase:""},
-             {name:"Me enfoco en la optimización de procesos y buenas prácticas de desarrollo.", clase:""},
-             {name:"Me adapto con facilidad a nuevas tecnologías y marcos de trabajo.", clase:""}
+     skill:[ {name:"Iniciativa en el desarrollo de productos y trabajo en equipo.", clase:""},
+             {name:"Enfoque en la optimización de procesos y buenas prácticas de desarrollo.", clase:""},
+             {name:"Adaptabilidad a nuevas tecnologías y marcos de trabajo.", clase:""}
              // {name:"Actualmente estoy enfocada en aprender React y poder aplicarlo en mis proyectos.", clase:""}
      ],
      bgcolor:"bg-box"
