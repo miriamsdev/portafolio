@@ -62,13 +62,13 @@ const Contact = () => {
             e.preventDefault();
             return false;
         } else {
-            // $.ajax({
-            //     method: "POST",
-            //     url: "https://formspree.io/dtdisendes012@gmail.com",
-            //     data: $('#contact-form').serialize(),
-            //     data:dataForm,
-            //     dataType: "json"
-            // });
+            $.ajax({
+                method: "POST",
+                url: "https://formspree.io/dtdisendes012@gmail.com",
+                data: $('#contact-form').serialize(),
+                data:dataForm,
+                dataType: "json"
+            });
             alert("Su mensaje fue enviado satisfactoriamente\nGracias!");
             console.log('Envia');
             $('#form-contact')[0].reset();

@@ -13,7 +13,7 @@
   }
   &__menu {
     @extend %flex;
-    padding: 1% 5%;
+    padding: 1% 10%;
     li {
       display: inline-block;
       padding: 7px 0;
@@ -21,7 +21,7 @@
     }
     a{
       color: #fff;
-      font-weight: 400;
+      font-weight: 500;
       font-size: 1.1rem;
     }
     li:hover{
@@ -38,7 +38,7 @@
   background-position: top;
   background-repeat: no-repeat;
   height: 100vh;
-
+  @extend %container;
   @extend %flex;
   flex-flow: column wrap;
   justify-content: flex-start;
@@ -63,14 +63,15 @@
   background-attachment: fixed;
   background-position: left;
   background-repeat: no-repeat;
+  margin-top: 91px;
 }
 //About me
 .aboutme {
   @extend %container;
   &__header {
-    margin: 1.5rem 0 3rem 0;
+    margin-bottom: 5%;
     text-align: center;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
   }
   &__image {
     @extend %flex;
@@ -128,24 +129,19 @@
 //Skills
 .skills {
   @extend %container;
-  margin-bottom: 5%;
+  background: url("../images/p6.png");
   &__row {
     .box{
-      height: 410px;
-      border-radius: 20px;
       text-align: center;
-      padding: 30px 14px 0 14px;
-      margin-bottom: 20px;
-      @include support(box-shadow, 8px 10px 14px -8px $second-color, moz webkit ms o);
       h5 {
+        font-family: Roboto;
+        font-size: .9rem;
         margin-bottom: 30px;
       }
       div{
-        @extend %flex;
-        flex-wrap: wrap;
-        margin: 5px;
-        div span{
-          font-size: 14px;
+        display: inline-block;
+        div {
+          margin: 3px;
         }
       }
     }
@@ -161,6 +157,7 @@
   @extend %container;
   &__item {
     margin-bottom: 70px;
+    text-align: justify;
     .links{
       a {
         @extend %btn-second;
@@ -197,7 +194,6 @@
 
 .contact{
     @extend %container;
-    padding-bottom: 4%;
     background: url(../images/p6.png);
     background-repeat: repeat;
     overflow: auto;
@@ -285,7 +281,6 @@
   }
 }
 
-
 footer{
   @extend %flex;
   background: $second-color;
@@ -294,19 +289,10 @@ footer{
     color: #fff;
   }
 }
-section {
-  padding: 5% 0;
-}
 @media screen and (max-width: 768px){
-  //.col {
-  //  padding: 0 1%;
-  //  min-height: 1px;
-  //}
-  //%container {
-  //  width: 100%;
-  //  padding: .5% 5%;
-  //  overflow: auto;
-  //}
+  %container {
+    padding: 5%;
+  }
   .hide-xs {
     display: none;
   }
@@ -364,12 +350,12 @@ section {
       padding: 63px 0;
     }
     h1 {
-      font-size: $text-size/1.5;
+      font-size: 2.88rem;
       line-height: $text-size - 1;
       margin-bottom: 30px;
     }
     h2 {
-      font-size: $text-size - 2.8rem;
+      font-size: 1.95rem;
     }
   }
 

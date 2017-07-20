@@ -10,18 +10,13 @@ $divider: #B6B6B6;
 $error: #f44862;
 
 $border: 2px;
-$font-family: 'Roboto Mono', Arial;
+$font-family: 'Metrophobic', Arial;
 
-.bg-b1 {
-  background: url(../images/p6.png);
-}
-.bg-b2 {
-  background: rgba(1, 209, 178, 0.45);
-}
-.bg-b3 {
-  background: rgba(44, 62, 80,0.78);
-  span {text-align: justify;}
-  color: $text-color;
+.bg-box {
+  margin-bottom: 2rem;
+  span {
+    text-align: justify;
+  }
 }
 .bg-primary-color {
   background: rgba(62, 214, 187,0.9);
@@ -34,7 +29,7 @@ $font-family: 'Roboto Mono', Arial;
 //Placeholders
 %container {
   width: 100%;
-  padding: 0 10%;
+  padding: 5% 10%;
   overflow: auto;
 }
 %flex {
@@ -58,9 +53,6 @@ $font-family: 'Roboto Mono', Arial;
 %btn-second:hover {
   background: $second-color;
   color: $primary-color;
-  i{
-    margin-right: 14px;
-  }
 }
 .hide-md {
   display: none;
@@ -76,11 +68,12 @@ $font-family: 'Roboto Mono', Arial;
   margin-bottom:10px;
 }
 
-h1{@include property('Metrophobic',600,$text-size,$text-size/2,$text-color);}
-h2{@include property('Metrophobic',500,$text-size - 1.5rem,2rem,$primary-color);}
-h3{@include property('Metrophobic',500,2.7rem,3rem,#424242);}
-h4{@include property('Metrophobic',500,1.5rem,1.4rem,$text-color);}
-p{@include property('Roboto',normal,1rem,1.5rem,#414549);}
-span{@include property('Roboto',normal,1rem,1.1rem,#5f6368);}
-a{@include property('Roboto Mono',lighten,1rem,1.1rem,#212121);}
+h1{@include property('Varela Round',600,$text-size,$text-size/2,$text-color);}
+h2{@include property('Varela Round',500,$text-size - 1.5rem,2rem,$primary-color);}
+h3{@include property('Varela Round',500,2.7rem,3rem,#424242);}
+h4{@include property('Varela Round',400,1.5rem,1.4rem,$primary-color);}
+p{@include property('Roboto',lighter,1.2rem,1.6rem,#414549);}
+span{@include property('Roboto',normal,.9rem,1.5rem,$second-color);}
+a{@include property('Metrophobic',lighten,1rem,1.1rem,#212121);}
+label{@include property('Metrophobic',lighten,1rem,1.1rem,#212121);}
 li{@include property('Roboto',500,1rem,.9rem,#414549);}

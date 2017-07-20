@@ -20,7 +20,7 @@ const carouselPortfolio = (data)=> {
             utils.append(`<span>${e} | </span>`);
         });
         const  itemText = $(`<div class="col xs-12 md-6">
-                                <h4>${elem.title}</h4>
+                                <h4 class="color-title">${elem.title}</h4>
                                 <h4>${elem.type}</h4>
                                 <p class="hide-xs">${elem.description}</p>
                                 <p><strong>Desarrollado con:</strong></p>

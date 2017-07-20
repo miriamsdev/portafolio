@@ -1,13 +1,6 @@
-.bg-b1 {
-  background: url(../images/p6.png); }
-
-.bg-b2 {
-  background: rgba(1, 209, 178, 0.45); }
-
-.bg-b3 {
-  background: rgba(44, 62, 80, 0.78);
-  color: #ffffff; }
-  .bg-b3 span {
+.bg-box {
+  margin-bottom: 2rem; }
+  .bg-box span {
     text-align: justify; }
 
 .bg-primary-color {
@@ -16,12 +9,12 @@
 .bg-second-color {
   background: rgba(62, 70, 101, 0.78); }
 
-.aboutme, .skills, .portfolio, .contact {
+.home, .aboutme, .skills, .portfolio, .contact {
   width: 100%;
-  padding: .5% 10%;
+  padding: 5% 10%;
   overflow: auto; }
 
-.header__menu, .home, .aboutme__image, .skills__row .box div, footer {
+.header__menu, .home, .aboutme__image, footer {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -40,14 +33,12 @@
 .portfolio__item .links a:hover, .contact__links .btn-cv .btn:hover, .contact__form button:hover {
   background: #2c3e50;
   color: #01d1b2; }
-  .portfolio__item .links a:hover i, .contact__links .btn-cv .btn:hover i, .contact__form button:hover i {
-    margin-right: 14px; }
 
 .hide-md {
   display: none; }
 
 h1 {
-  font-family: "Metrophobic";
+  font-family: "Varela Round";
   font-size: 5rem;
   font-weight: 600;
   line-height: 2.5rem;
@@ -55,7 +46,7 @@ h1 {
   margin-bottom: 10px; }
 
 h2 {
-  font-family: "Metrophobic";
+  font-family: "Varela Round";
   font-size: 3.5rem;
   font-weight: 500;
   line-height: 2rem;
@@ -63,7 +54,7 @@ h2 {
   margin-bottom: 10px; }
 
 h3 {
-  font-family: "Metrophobic";
+  font-family: "Varela Round";
   font-size: 2.7rem;
   font-weight: 500;
   line-height: 3rem;
@@ -71,31 +62,39 @@ h3 {
   margin-bottom: 10px; }
 
 h4 {
-  font-family: "Metrophobic";
+  font-family: "Varela Round";
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.4rem;
-  color: #ffffff;
+  color: #01d1b2;
   margin-bottom: 10px; }
 
 p {
   font-family: "Roboto";
-  font-size: 1rem;
-  font-weight: normal;
-  line-height: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: lighter;
+  line-height: 1.6rem;
   color: #414549;
   margin-bottom: 10px; }
 
 span {
   font-family: "Roboto";
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: normal;
-  line-height: 1.1rem;
-  color: #5f6368;
+  line-height: 1.5rem;
+  color: #2c3e50;
   margin-bottom: 10px; }
 
 a {
-  font-family: "Roboto Mono";
+  font-family: "Metrophobic";
+  font-size: 1rem;
+  font-weight: lighten;
+  line-height: 1.1rem;
+  color: #212121;
+  margin-bottom: 10px; }
+
+label {
+  font-family: "Metrophobic";
   font-size: 1rem;
   font-weight: lighten;
   line-height: 1.1rem;
@@ -470,14 +469,14 @@ img {
   .header__logo img {
     width: 70px; }
   .header__menu {
-    padding: 1% 5%; }
+    padding: 1% 10%; }
     .header__menu li {
       display: inline-block;
       padding: 7px 0;
       margin-left: 8%; }
     .header__menu a {
       color: #fff;
-      font-weight: 400;
+      font-weight: 500;
       font-size: 1.1rem; }
     .header__menu li:hover {
       border-bottom: 4px solid #01d1b2; }
@@ -507,12 +506,13 @@ img {
   background: url("../images/codeon.png");
   background-attachment: fixed;
   background-position: left;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  margin-top: 91px; }
 
 .aboutme__header {
-  margin: 1.5rem 0 3rem 0;
+  margin-bottom: 5%;
   text-align: center;
-  letter-spacing: 5px; }
+  letter-spacing: 3px; }
 .aboutme__image img {
   width: 200px;
   border-radius: 50%; }
@@ -553,31 +553,24 @@ img {
       border-radius: 5px; }
 
 .skills {
-  margin-bottom: 5%; }
+  background: url("../images/p6.png"); }
   .skills__row .box {
-    height: 410px;
-    border-radius: 20px;
-    text-align: center;
-    padding: 30px 14px 0 14px;
-    margin-bottom: 20px;
-    -moz-box-shadow: 8px 10px 14px -8px #2c3e50;
-    -webkit-box-shadow: 8px 10px 14px -8px #2c3e50;
-    -ms-box-shadow: 8px 10px 14px -8px #2c3e50;
-    -o-box-shadow: 8px 10px 14px -8px #2c3e50;
-    box-shadow: 8px 10px 14px -8px #2c3e50; }
+    text-align: center; }
     .skills__row .box h5 {
+      font-family: Roboto;
+      font-size: .9rem;
       margin-bottom: 30px; }
     .skills__row .box div {
-      flex-wrap: wrap;
-      margin: 5px; }
-      .skills__row .box div div span {
-        font-size: 14px; }
+      display: inline-block; }
+      .skills__row .box div div {
+        margin: 3px; }
   .skills .size-icon {
     font-size: 50px;
     color: #2c3e50; }
 
 .portfolio__item {
-  margin-bottom: 70px; }
+  margin-bottom: 70px;
+  text-align: justify; }
   .portfolio__item .links a {
     color: #ffffff; }
 .portfolio .owl-carousel.owl-loaded {
@@ -601,7 +594,6 @@ img {
   right: -24px; }
 
 .contact {
-  padding-bottom: 4%;
   background: url(../images/p6.png);
   background-repeat: repeat;
   overflow: auto; }
@@ -668,7 +660,7 @@ img {
             line-height: 12px;
             color: #B6B6B6; }
     .contact__form button {
-      font-family: "Roboto Mono", Arial;
+      font-family: "Metrophobic", Arial;
       font-size: 1rem;
       line-height: 1.1rem;
       border: none;
@@ -680,14 +672,9 @@ footer {
   footer span {
     color: #fff; }
 
-section {
-  padding: 5% 0; }
-
 @media screen and (max-width: 768px) {
-  .aboutme, .skills, .portfolio, .contact {
-    width: 100%;
-    padding: .5% 5%;
-    overflow: auto; }
+  .home, .aboutme, .skills, .portfolio, .contact {
+    padding: 5%; }
 
   .hide-xs {
     display: none; }
@@ -734,11 +721,11 @@ section {
     width: 133px;
     padding: 63px 0; }
   .home h1 {
-    font-size: 3.33333rem;
+    font-size: 2.88rem;
     line-height: 4rem;
     margin-bottom: 30px; }
   .home h2 {
-    font-size: 2.2rem; }
+    font-size: 1.95rem; }
 
   .bg-code {
     background: #fff; }

@@ -7,48 +7,48 @@ const dataSkill=[
             {name:"CSS3", clase:"icon-css3"},
             {name:"Bootstrap", clase:"icon-bootstrap"},
             {name:"Sass", clase:"icon-sass"},
-            {name:"Git", clase:"icon-git"},
+            {name:"GitHub", clase:"icon-git"},
             {name:"Gulp", clase:"icon-gulp"},
             {name:"", clase:"icon-jquery"},
             {name:"", clase:"icon-ajax"},
-            {name:"", clase:"icon-nodejs"},
-            {name:"", clase:"icon-materialize"},
-            {name:"", clase:"icon-foundation"}
+            {name:"Node.js", clase:"icon-nodejs"},
+            {name:"Materalize", clase:"icon-materialize"},
+            {name:"Foundation", clase:"icon-foundation"}
      ],
-     bgcolor:"bg-b1"
+     bgcolor:"bg-box"
     },
     {icon:"fa fa-github",
      tittle:"Project Management",
      subt:"Lo que me permite compartir en comunidad",
-     skill:[{name:"Git Hub", clase:"icon-github"},
+     skill:[{name:"GitHub", clase:"icon-github"},
             {name:"Heroku", clase:"icon-heroku"},
             {name:"Trello", clase:"icon-trello"}
      ],
-     bgcolor:"bg-b2"
+     bgcolor:"bg-box"
     },
     {icon:"fa fa-smile-o",
-     tittle:"Personal",
+     tittle:"Soft Skills",
      subt:"Lo que puedo contribuir",
-     skill:[ {name:"Buen manejo de las metodologías ágiles", clase:""},
-             {name:"Me apasiona codear, sobre todo optimizar procesos.", clase:""},
-             {name:"Me adapto con facilidad a nuevas tecnologías y marco de trabajo.", clase:""},
-             {name:"Actualmente estoy enfocada en aprender React y poder aplicar en mis proyectos.", clase:""},
+     skill:[ {name:"Soy una persona con iniciativa en el desarrollo de productos y trabajo en equipo.", clase:""},
+             {name:"Me enfoco en la optimización de procesos y buenas prácticas de desarrollo.", clase:""},
+             {name:"Me adapto con facilidad a nuevas tecnologías y marcos de trabajo.", clase:""}
+             // {name:"Actualmente estoy enfocada en aprender React y poder aplicarlo en mis proyectos.", clase:""}
      ],
-     bgcolor:"bg-b3"
+     bgcolor:"bg-box"
     }];
 
 
 $( _ =>{
     dataSkill.forEach(element =>{
-        const col=$('<div class="col xs-12 md-4"></div>');
-        const skillBox=$(`<div class="box ${element.bgcolor}"></div>`);
-        const span=$(`<span class="${element.icon} size-icon"></span>`);
-        const h4=$(`<h4>${element.tittle}</h4>`);
-        const h5=$(`<h5>${element.subt}</h5>`);
-        const divSkills=$(`<div></div>`);
+        const col = $('<div class="col md-4"></div>');
+        const skillBox = $(`<div class="box ${element.bgcolor}"></div>`);
+        const span = $(`<span class="${element.icon} size-icon"></span>`);
+        const h4 = $(`<h4>${element.tittle}</h4>`);
+        const h5 = $(`<h5>${element.subt}</h5>`);
+        const divSkills = $(`<div></div>`);
 
         element.skill.forEach(e =>{
-            divSkills.append(`<div class="${e.clase}"><span>${e.name}</span></div>`);
+            divSkills.append(`<div><div class="${e.clase}"></div><br><span>${e.name}</span></div>`);
         });
 
         skillBox.append(span);
