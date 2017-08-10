@@ -7,7 +7,7 @@ const dataSkill=[
             {name:"CSS3", clase:"icon-css3"},
             {name:"Bootstrap", clase:"icon-bootstrap"},
             {name:"Sass", clase:"icon-sass"},
-            {name:"GitHub", clase:"icon-git"},
+            {name:"Git", clase:"icon-git"},
             {name:"Gulp", clase:"icon-gulp"},
             {name:"", clase:"icon-jquery"},
             {name:"", clase:"icon-ajax"},
